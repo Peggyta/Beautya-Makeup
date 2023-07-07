@@ -5,13 +5,17 @@ import MobileLayout from './MobileLayout';
 import Logo from '../icons/Logo';
 import Search from '../icons/Search';
 import Language from '../icons/Language';
+import styles from '../../styles/general.module.css';
 
 const Layout = ({children}) => {
     return (
         <div className='max-w-8xl mx-auto'>
-            <MobileLayout />
+            <div className='md:hidden block'>
+                <MobileLayout />
+            </div>
             <header className='hidden md:flex justify-between items-end py-6 h-28 w-full lg:px-12 px-6 gap-2'>
-                <div>
+                <div className='relative'>
+                <div className={styles.logoShadowPC}></div>
                     <Link href='/'>
                         <Logo />
                     </Link> 
