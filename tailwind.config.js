@@ -9,6 +9,17 @@ module.exports = {
     extend: {
       maxWidth: {
         '8xl': '1440px',
+        '750': '750px',
+        '640': '640px',
+        '600': '600px',
+        '500': '400px',
+      },
+      spacing: {
+        '85': '85px',
+        '18': '75px',
+        '19': '78px',
+        '30': '118px',
+        '34': '135px',
       },
       colors: {
         'midnight': '#202020', 
@@ -18,6 +29,8 @@ module.exports = {
         'mulberry': '#79043c',
         'sangria': '#280114',
         'rasin': '#14010a',
+        'neon': '#fa58a6',
+        'ash': '#cbcbcb',
       },
     },
   },

@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 //vectors
-import Circle from '../vectors/Circle';
-import Face from '../vectors/Face';
-import LeafFour from '../vectors/LeafFour';
-import LeafThree from '../vectors/LeafThree';
-import LeafTwo from '../vectors/LeafTwo';
-import LeafOne from '../vectors/LeafOne';
+import Circle from '../../vectors/Circle';
+import Face from '../../vectors/Face';
+import LeafFour from '../../vectors/LeafFour';
+import LeafThree from '../../vectors/LeafThree';
+import LeafTwo from '../../vectors/LeafTwo';
+import LeafOne from '../../vectors/LeafOne';
 
 
 const FooterSecTwo = () => {
@@ -67,7 +67,7 @@ const FooterSecTwo = () => {
                         <div className='md:row-start-1 row-start-3 col-span-2 mt-0'>
                             <button className='border md:w-28 w-full py-3'>Subscribe</button>
                         </div>  
-                        <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem] md:-mt-3   row-start-2  col-span-2 md:col-start-1 col-end-3">
+                        <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem] md:-mt-3 lg:pt-1  row-start-2  col-span-2 md:col-start-1 col-end-3">
                             <input
                             class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] 
                                 border-solid border-neutral-300 outline-none before:pointer-events-none 

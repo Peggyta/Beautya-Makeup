@@ -12,5 +12,8 @@ html {
   height: 100%;
 }
 
-
+a:hover {
+  color: #FA58A6;
+  transition: all .2s ease-in;
+}
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import Bunny from '../icons/Bunny';
-import Lamp from '../icons/Lamp';
-import Wheat from '../icons/Wheat';
-import Leaf from '../icons/Leaf';
+import Bunny from '../../icons/Bunny';
+import Lamp from '../../icons/Lamp';
+import Wheat from '../../icons/Wheat';
+import Leaf from '../../icons/Leaf';
 
 const FooterSecOne = () => {
     return (

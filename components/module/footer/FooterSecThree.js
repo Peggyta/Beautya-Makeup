@@ -1,13 +1,13 @@
 import React from 'react';
 //icons
-import Reddit from '../icons/Reddit';
-import FB from '../icons/FB';
-import Pinterest from '../icons/Pinterest';
-import TikTok from '../icons/TikTok';
-import Instagram from '../icons/Instagram';
-import Twitter from '../icons/Twitter';
-import Call from '../icons/Call';
-import Place from '../icons/Place';
+import Reddit from '../../icons/Reddit';
+import FB from '../../icons/FB';
+import Pinterest from '../../icons/Pinterest';
+import TikTok from '../../icons/TikTok';
+import Instagram from '../../icons/Instagram';
+import Twitter from '../../icons/Twitter';
+import Call from '../../icons/Call';
+import Place from '../../icons/Place';
 
 const FooterSecThree = () => {
     return (

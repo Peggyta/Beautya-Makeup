@@ -1,5 +1,5 @@
 import React from 'react';
-import CopyRight from '../icons/CopyRight';
+import CopyRight from '../../icons/CopyRight';
 
 const FooterSecFour = () => {
     return (

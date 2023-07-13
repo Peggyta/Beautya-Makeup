@@ -1,14 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
 import MobileLayout from './MobileLayout';
-import FooterSecOne from '../module/FooterSecOne';
-import FooterSecTwo from '../module/FooterSecTwo';
-import FooterSecThree from '../module/FooterSecThree';
-import FooterSecFour from '../module/FooterSecFour';
+import FooterSecOne from '../module/footer/FooterSecOne';
+import FooterSecTwo from '../module/footer/FooterSecTwo';
+import FooterSecThree from '../module/footer/FooterSecThree';
+import FooterSecFour from '../module/footer/FooterSecFour';
 //icons
-import Logo from '../icons/Logo';
-import Search from '../icons/Search';
-import Language from '../icons/Language';
+import Logo from '../../components/icons/Logo';
+import Search from '../../components/icons/Search';
+import Language from '../../components/icons/Language';
 import styles from '../../styles/general.module.css';
 
 const Layout = ({children}) => {
@@ -26,11 +26,11 @@ const Layout = ({children}) => {
                 </div>
                 <div className='md:flex items-center w-max lg:gap-x-10 gap-x-2 justify-center 
                 font-bold text-midnight hidden lg:text-base text-sm'>
-                    <Link   href='/'>Women Make UP</Link>
-                    <Link   href='/'>Women Skincare</Link>
-                    <Link   href='/'>Gifts & Sets</Link>
-                    <Link   href='/'>Branches</Link>
-                    <Link href='/'>Our Brand</Link>
+                    <Link href='/'>Women Make UP</Link>
+                    <Link href='/'>Women Skincare</Link>
+                    <Link href='/'>Gifts & Sets</Link>
+                    <Link href='/'>Branches</Link>
+                    <Link href='/our-brand'>Our Brand</Link>
                 </div>
                 <div className='hidden md:flex gap-x-2 w-max items-center'>
                     <Search /> 
