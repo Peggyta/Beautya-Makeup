@@ -11,8 +11,8 @@ import Place from '../icons/Place';
 
 const FooterSecThree = () => {
     return (
-        <div className='bg-sangria w-full'>
-            <div className='max-w-640 md:max-w-none h-40 py-4 lg:py-0 lg:h-16 flex-col flex 
+        <div className='bg-sangria w-full z-20 relative'>
+            <div className='max-w-640 md:max-w-none h-40 z-20 py-4 lg:py-0 lg:h-16 flex-col flex 
                 md:flex-row font-normal md:items-center lg:px-16 md:px-6 px-6 mx-auto justify-between'>
                 <div className='text-white flex flex-col lg:flex-row'>
                     <div className='flex items-center gap-2'>

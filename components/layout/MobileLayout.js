@@ -12,7 +12,7 @@ import styles from '../../styles/general.module.css';
 const MobileLayout = () => {
     const[showMenu, setShowMenu] = useState(false);
     return (
-        <>
+    <>
         <div className='w-full flex items-end justify-between px-4 pt-4 relative'>
             <div onClick={()=> setShowMenu(!showMenu) } className='flex gap-3'>
                 <button onClick={()=> setShowMenu(!showMenu)}>
@@ -48,7 +48,7 @@ const MobileLayout = () => {
                 <Link href='/'>Our Brand</Link> 
             </div>            
         </div>
-        </>
+    </>
     );
 };
 

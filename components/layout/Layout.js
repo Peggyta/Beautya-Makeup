@@ -1,6 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 import MobileLayout from './MobileLayout';
+import FooterSecOne from '../module/FooterSecOne';
+import FooterSecTwo from '../module/FooterSecTwo';
+import FooterSecThree from '../module/FooterSecThree';
+import FooterSecFour from '../module/FooterSecFour';
 //icons
 import Logo from '../icons/Logo';
 import Search from '../icons/Search';
@@ -39,10 +43,10 @@ const Layout = ({children}) => {
             </header>
             <div className='min-h-screen w-full'>{children}</div>
             <footer className='w-full'>
-                <div className='bg-rose'>1</div>
-                <div className='bg-mulberry'>2</div>
-                <div className='bg-sangria'>3</div>
-                <div className='bg-rasin'>4</div>
+                <FooterSecOne />
+                <FooterSecTwo />
+                <FooterSecThree />
+                <FooterSecFour />
             </footer>
         </div>
     );
