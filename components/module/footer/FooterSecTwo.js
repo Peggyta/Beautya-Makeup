@@ -67,9 +67,9 @@ const FooterSecTwo = () => {
                         <div className='md:row-start-1 row-start-3 col-span-2 mt-0'>
                             <button className='border md:w-28 w-full py-3'>Subscribe</button>
                         </div>  
-                        <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem] md:-mt-3 lg:pt-1  row-start-2  col-span-2 md:col-start-1 col-end-3">
+                        <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem] md:-mt-3 lg:pt-1  row-start-2  col-span-2 md:col-start-1 col-end-3">
                             <input
-                            class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] 
+                            className="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] 
                                 border-solid border-neutral-300 outline-none before:pointer-events-none 
                                 before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full 
                                 before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] 
@@ -86,14 +86,14 @@ const FooterSecTwo = () => {
                                 value=""
                                 id="checkboxDefault" />
                             <label
-                                class="inline-block pl-[0.15rem] hover:cursor-pointer hidden md:block"
-                                for="checkboxDefault">
+                                className="inline-block pl-[0.15rem] hover:cursor-pointer hidden md:block"
+                                htmlFor="checkboxDefault">
                                 By submitting your email, you agree to receive advertising emails from Beautya.
                                 <br />
                                 Please review our Privacy Policy, which includes our Financial Incentive 
                                 Notice for CA residents.
                             </label>
-                            <label className='block md:hidden' for="checkboxDefault">
+                            <label className='block md:hidden' htmlFor="checkboxDefault">
                                 I agree to Beautya’s Terms and Conditions and Privacy and Policy.
                             </label>
                         </div>
