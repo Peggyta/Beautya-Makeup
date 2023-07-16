@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Inclusion = () => {
     return (
-    <div className='w-full mt-6  max-w-1016 mx-auto relative lg:h-800  h-screen'>
+    <div className='w-full mt-6 max-w-1016 mx-auto relative lg:h-800 sm:h-screen'>
         <div className='bg-jam py-28 hidden sm:block'></div>
         <div className='sm:absolute sm:top-24 px-6'>
             <div className='flex flex-col lg:flex-row gap-6 items-center justify-center'>
@@ -26,7 +26,7 @@ const Inclusion = () => {
                     </p>
                 </div>
             </div>
-            <div className='mt-10  text-justify '>
+            <div className='mt-10 mb-6 md:mb-0  text-justify '>
                 <h3 className='font-bold text-2xl mb-3'>Our Commitments</h3>
                 <p className='text-lg'>
                     We believe that everyone deserves access to safe, effective, and
