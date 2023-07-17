@@ -1,18 +1,18 @@
-import Brand from "@/components/template/Brand";
-import Link from "next/link";
 import { useRouter } from "next/router";
+import Link from "next/link";
+import Branches from "@/components/template/Branches";
 
-function OurBrand() {
+function CompanyBranches() {
     const router = useRouter();
-    const {route}= router;
+    const{route} = router;
     return(
         <>
             <div className=" md:px-12 md:mb-4 md:mt-3 mt-10 px-4">
                 <Link href={`${route}`} className="font-bold">{route}</Link>
-            </div>
-            <Brand />
-        </>   
-    ) 
+                <Branches />
+            </div> 
+        </>
+    )
 }
 
-export default OurBrand;
+export default CompanyBranches;

@@ -17,3 +17,20 @@ a:hover {
   transition: all .2s ease-in;
 }
 
+@layer components {
+  .branch-number {
+    @apply rounded-full text-center text-cherry absolute font-bold sm:text-lg text-sm bg-cloud flex 
+    justify-center
+  }
+  .footer-check-box {
+    @apply relative float-left border-solid border-ash outline-none 
+    before:pointer-events-none before:absolute checked:after:absolute
+    checked:after:block before:bg-transparent checked:after:rotate-45 
+    before:opacity-0 focus:before:scale-100 checked:focus:after:border-white
+    checked:after:-mt-px checked:focus:after:border-solid checked:focus:after:rotate-45
+    hover:cursor-pointer checked:focus:after:-mt-px checked:after:bg-transparent
+    checked:focus:after:border-l-0 checked:focus:before:scale-100 checked:after:border-solid checked:after:border-white
+    checked:after:border-l-0 checked:after:border-t-0 checked:focus:after:bg-transparent
+    before:scale-0 before:rounded-full appearance-none checked:focus:after:border-t-0
+  }
+}

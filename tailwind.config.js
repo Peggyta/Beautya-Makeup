@@ -21,6 +21,8 @@ module.exports = {
       },
       width: {
         '450': '450px',
+        '464': '464px',
+        '520': '520px',
       },
       height: {
         '800': '800px',
@@ -29,6 +31,7 @@ module.exports = {
         '439': '439px',
       },
       spacing: {
+        '2.5': '9px',
         '85': '85px',
         '11': '38px',
         '14': '50px',
@@ -49,6 +52,10 @@ module.exports = {
         'neon': '#fa58a6',
         'ash': '#cbcbcb',
         'jam': '#510228',
+        'cherry': '#b70f5a',
+        'eggplant': '#0c0002',
+        'cloud': '#dfdfdf',
+        'berry': '#a10550',
       },
     },
   },

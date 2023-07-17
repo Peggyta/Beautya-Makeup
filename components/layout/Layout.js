@@ -29,7 +29,7 @@ const Layout = ({children}) => {
                     <Link href='/'>Women Make UP</Link>
                     <Link href='/'>Women Skincare</Link>
                     <Link href='/'>Gifts & Sets</Link>
-                    <Link href='/'>Branches</Link>
+                    <Link href='/branches'>Branches</Link>
                     <Link href='/our-brand'>Our Brand</Link>
                 </div>
                 <div className='hidden md:flex gap-x-2 w-max items-center'>
