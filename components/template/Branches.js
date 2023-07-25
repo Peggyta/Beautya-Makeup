@@ -3,8 +3,8 @@ import BranchSearchBar from '../module/branch/BranchSearchBar';
 
 const Branches = () => {
     return (
-        <div>
-            <BranchSearchBar />
+        <div>  
+            <BranchSearchBar />   
         </div>
     );
 };

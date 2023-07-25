@@ -4,6 +4,7 @@ import React from 'react';
 import Near from '@/components/icons/Near';
 
 const BranchSearchBar = () => {
+    
     return (
         <div className='max-w-8xl mx-auto'>
             <h2 className='text-raven font-bold text-3xl my-3'>Beautya Branches</h2>

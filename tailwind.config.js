@@ -56,6 +56,7 @@ module.exports = {
         'eggplant': '#0c0002',
         'cloud': '#dfdfdf',
         'berry': '#a10550',
+        'dust': '#faf9f5',
       },
     },
   },
