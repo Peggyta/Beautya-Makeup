@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import data from '@/utils/data';
 import CountriesList from '../module/branch/CountriesList';
 
-const AllBranches = () => {
-    
+const AllBranches = ({data}) => {
+    //to filter duplicate name of countries
+    function filterDuplicate(data) {
+        return data.filter((item,index)=> data.findIndex(i=> i.country === item.country) === index)
+    };
     return (
         <div className='max-w-8xl mx-auto px-12 text-raven md:px-10 px-4 bg-dust'>
             <h2 className='font-bold text-3xl my-3'>All Branches</h2>
@@ -22,8 +25,9 @@ const AllBranches = () => {
                 </div>
                 <div className='border grid lg:grid-cols-4 md:grid-cols-3  
                 sm:grid-cols-2 grid-cols-1 gap-6 bg-white place-items-center mt-6 py-16'>
-                {data.countries.map((country)=> <div className='flex gap-2 text-raven text-lg' key={country.slug}>
+                {filterDuplicate(data).map((country)=> <div className='flex gap-2 text-raven text-lg' key={country._id} country={country}>
                         <CountriesList country={country} />
+                        {/* {country.country} */}
                     </div>)}
                 </div>
             </div>  
