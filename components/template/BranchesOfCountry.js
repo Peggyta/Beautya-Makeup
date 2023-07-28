@@ -1,42 +1,32 @@
+import { useRouter } from 'next/router';
 import React from 'react';
-//icons
-import LocationSign from '../icons/LocationSign';
-import Phone from '../icons/Phone';
-import Street from '../icons/Street';
-import Time from '../icons/Time';
-import Link from 'next/link';
+import BranchCard from '../module/branch/BranchCard';
+//icon
+import Back from '../icons/Back';
 
-const BranchesOfCountry = ({branch}) => {
-    const{branches:[
-        {title, distance, street, phone, status, work} 
-    ]} = branch ;
+const BranchesOfCountry = ({info}) => {
+    const router = useRouter();
+    const {country} = router.query;
+    const filteredCountries = info.filter((item)=> item.country === country);
+   const backHandler = () => {
+    router.back()
+   };
+
     return (
-            <div className='w-80 mx-auto py-6 px-3 text-raven flex flex-col gap-5 border border-ash'>
-            <div className='flex gap-2 items-center'>
-                <LocationSign />
-                <h3 className='text-lg font-bold'>{title}</h3>
-                <p className='text-xs text-neutral'>({distance} Kms)</p>
-            </div>
-            <div className='text-sm flex flex-col gap-2'>
-                <div className='flex gap-2 items-center'>
-                    <Street />
-                    <p>{street}</p>
-                </div>
-                <div className='flex gap-2 items-center'>
-                    <Phone />
-                    <p>{phone}</p>
-                </div>
-                <div className='flex gap-2 items-center'>
-                    <Time />
-                    <p><span className='font-bold'>{status}</span> {work}</p>
-                </div>
-                <div className='border border-raven flex justify-center'>
-                    <Link className='py-2 w-full text-center' href='/'>More Details</Link>
-                </div>
-            </div>
+    <div className='max-w-8xl px-12 mt-6'>
+        <div className='relative bg-jam rounded-lg py-1 w-24      '>
+            <button className=' flex items-center gap-2  text-white' onClick={backHandler}>
+            <Back/> Back</button>    
         </div>
+        <div className='max-w-6xl mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 
+            md:gap-6 gap-10 mt-16 mb-10 lg:px-6'>
+            {filteredCountries.map((branches)=>{
+                return(
+                <BranchCard key={branches._id} {...branches} />)
+            })}    
+        </div>
+    </div>
     );
-
 };
 
 export default BranchesOfCountry;

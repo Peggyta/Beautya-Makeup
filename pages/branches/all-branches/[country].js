@@ -1,24 +1,28 @@
-import { useRouter } from "next/router";
 import BranchesOfCountry from "@/components/template/BranchesOfCountry";
-import data from "@/utils/data";
+import connectDB from "@/utils/connectDB";
+import Branch from "@/models/Branch";
 
-
-
-function CountryBranches() {
-   
-    const {query} = useRouter();
-    const{name} = query;
-    const branch = data.countries.find(i => i.name === name);
-    console.log(branch);
-    if(!name) {
-        return <div>No branch found in this country!</div>
-    }
+const BranchDetails = ({getBranches}) => {
     return(
-        <div className="mt-12">
-                <BranchesOfCountry branch={branch}  />       
+        <div>
+            <BranchesOfCountry info={getBranches}   />
         </div>
+        
     )
+};
+
+export default BranchDetails;
+
+export async function getServerSideProps() {
+    try {
+        await connectDB();
+        const getBranches = await Branch.find();
+        return {
+            props: {getBranches: JSON.parse(JSON.stringify(getBranches))}
+        }
+    } catch(err) {
+        return {
+            notFound: true,
+        };
+    }
 }
-
-export default CountryBranches;
-
