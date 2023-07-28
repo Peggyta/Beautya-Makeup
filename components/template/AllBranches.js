@@ -23,9 +23,6 @@ const AllBranches = () => {
                         </button>
                      </div>
                 </div>
-                {/* {filterDuplicate(data).map((country)=> <div className='flex gap-2 text-raven text-lg' key={country._id} country={country}>
-                        <CountriesList country={country} />
-                    </div>)} */}
                     <ListOfCountries />
             </div>  
     );

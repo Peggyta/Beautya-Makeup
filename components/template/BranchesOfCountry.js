@@ -18,8 +18,8 @@ const BranchesOfCountry = ({info}) => {
             <button className=' flex items-center gap-2  text-white' onClick={backHandler}>
             <Back/> Back</button>    
         </div>
-        <div className='max-w-6xl mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 
-            md:gap-6 gap-10 mt-16 mb-10 lg:px-6'>
+        <div className='max-w-6xl mx-auto grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 
+            md:gap-6 gap-10 mt-16 mb-10  '>
             {filteredCountries.map((branches)=>{
                 return(
                 <BranchCard key={branches._id} {...branches} />)
