@@ -1,9 +1,26 @@
+import React, {useState} from 'react';
 import Link from 'next/link';
-import React from 'react';
+import { useRouter } from 'next/router';
+import Image from 'next/image';
 //icon
 import Near from '@/components/icons/Near';
+import BranchSearchCard from './BranchSearchCard';
+//img
+import location from '../../../public/images/branchlocation.jpg';
 
-const BranchSearchBar = () => {
+
+const BranchSearchBar = ({info}) => {
+    const router = useRouter();
+    const[countries, setCountries] = useState('');
+    const[codes, setCodes] = useState('');
+   
+    const searchHandler = () => {
+        if(countries || codes) {
+            router.push(`/branches/${countries}/${codes}`)
+        } else {
+            alert('Please view all branches, or enter a valid country!')
+        }
+    }
     
     return (
         <div className='max-w-8xl mx-auto'>
@@ -11,11 +28,17 @@ const BranchSearchBar = () => {
             <div className='w-full flex md:flex-row flex-col items-center justify-between'>
                 <div className='w-full md:w-3/4 flex md:flex-row flex-col items-center lg:gap-4 gap-3'>
                 <div className='text-cement text-sm flex flex-col justify-center lg:w-464 md:w-80 pt-5 w-full '>
-                    <input className='py-3 pl-4 text-lg border-b border-cement' placeholder='Address' />
+                    <input 
+                        type='text'
+                        value={countries}
+                        onChange={(e)=> setCountries(e.target.value)}
+                        className='py-3 pl-4 text-lg border-b border-cement' 
+                        placeholder='Address' />
                     <p className='mt-1 pl-4'>City, Street Or Zip Code</p>
-                </div>
-                    
-                    <button className='bg-berry hover:bg-neon transition ease-in
+                </div> 
+                    <button 
+                        onClick={searchHandler}
+                        className='bg-berry hover:bg-neon transition ease-in
                         lg:w-44 text-white py-2 md:w-36 w-full mt-2 md:mt-0'>Search
                     </button>
                     <p>Or</p>
@@ -28,10 +51,20 @@ const BranchSearchBar = () => {
                     <Link href='/branches/all-branches'>View All Branches</Link>
                 </div>
             </div>
-            
-            <div className='flex justify-between mt-10'>
-                <div>search result</div>
-                <div>branch map</div>
+            <div className='flex justify-between mt-10 flex-col gap-6 mb-10 lg:flex-row items-center'>
+                <div className='overflow-y-scroll h-439 '>
+                    
+                    {info?.map((item)=>{
+                        return(
+                            <div >
+                                <BranchSearchCard {...item} key={item._id} />
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className='xl:w-573 md:w-520 '>
+                    <Image src={location} width={570} height={471} />
+                </div>
             </div>   
         </div>
     );
