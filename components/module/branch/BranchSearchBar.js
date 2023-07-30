@@ -52,18 +52,18 @@ const BranchSearchBar = ({info}) => {
                 </div>
             </div>
             <div className='flex justify-between mt-10 flex-col gap-6 mb-10 lg:flex-row items-center'>
-                <div className='overflow-y-scroll h-439 '>
+                <div className={countries ? 'overflow-y-scroll h-439': null}>
                     
                     {info?.map((item)=>{
                         return(
-                            <div >
+                            
                                 <BranchSearchCard {...item} key={item._id} />
-                            </div>
+                            
                         )
                     })}
                 </div>
                 <div className='xl:w-573 md:w-520 '>
-                    <Image src={location} width={570} height={471} />
+                    <Image src={location} width='auto' height='auto' alt='branch' priority={true} />
                 </div>
             </div>   
         </div>
