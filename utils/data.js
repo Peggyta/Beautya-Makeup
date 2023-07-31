@@ -441,7 +441,7 @@ const data = {
             status: 'closed',
             work: 'Opens At 6:00pm',
         },        
-    ]
+    ],
 }
 
 export default data;
