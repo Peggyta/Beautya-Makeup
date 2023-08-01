@@ -42,8 +42,8 @@ const MobileLayout = () => {
             </div>   
             <div className='flex flex-col items-center gap-3 mt-6'>
                 <Link href='/'>Women Make UP</Link> 
+                <Link href='/blog'>Blog</Link>
                 <Link href='/'>Women Skincare</Link>
-                <Link href='/'>Gifts & Sets</Link>
                 <Link href='/branches'>Branches</Link> 
                 <Link href='/our-brand'>Our Brand</Link> 
             </div>            

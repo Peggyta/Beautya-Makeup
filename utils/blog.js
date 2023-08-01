@@ -38,7 +38,7 @@ const blog = {
             title: 'How to get clear skin fast',
             category: 'Skincare',
             author: 'Dr. Wade Warren',
-            published: 'Jan 20, 2021',
+            published: 'Sep 17, 2018',
             slug: 'wash',
             description: [
                 'Numerous skin care tips exist for different skin types, and there are also general tips that people can try. Anyone uncertain about their skin care routine should consult a dermatologist for additional advice.',
@@ -89,7 +89,7 @@ const blog = {
             title: 'How to get clear skin fast',
             category: 'Skincare',
             author: 'Dr. Wade Warren',
-            published: 'Jan 20, 2021',
+            published: 'Jun 14, 2020',
             slug: 'bath',
             description: [
                 'Numerous skin care tips exist for different skin types, and there are also general tips that people can try. Anyone uncertain about their skin care routine should consult a dermatologist for additional advice.',
@@ -103,7 +103,7 @@ const blog = {
             image:'../public/image/bath.jpg'
         },
         {
-            title: 'How to get clear skin fast',
+            title: 'How to look younger?',
             category: 'Skincare',
             author: 'Dr. Wade Warren',
             published: 'Jan 20, 2021',
@@ -120,10 +120,10 @@ const blog = {
             image:'../public/image/flower.jpg'
         },
         {
-            title: 'How to get clear skin fast',
+            title: 'Tips for Healthy Skin',
             category: 'Skincare',
             author: 'Dr. Wade Warren',
-            published: 'Jan 20, 2021',
+            published: 'Dec 27, 2021',
             slug: 'mirror',
             description: [
                 'Numerous skin care tips exist for different skin types, and there are also general tips that people can try. Anyone uncertain about their skin care routine should consult a dermatologist for additional advice.',
@@ -137,10 +137,10 @@ const blog = {
             image:'../public/image/mirror.jpg'
         },
         {
-            title: 'How to get clear skin fast',
+            title: 'Ways to plump your lips',
             category: 'Skincare',
             author: 'Dr. Wade Warren',
-            published: 'Jan 20, 2021',
+            published: 'Nov 06, 2020',
             slug: 'filler',
             description: [
                 'Numerous skin care tips exist for different skin types, and there are also general tips that people can try. Anyone uncertain about their skin care routine should consult a dermatologist for additional advice.',

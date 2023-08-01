@@ -13,12 +13,12 @@ const BranchesOfCountry = ({info}) => {
    };
 
     return (
-    <div className='max-w-8xl px-12 mt-6'>
-        <div className='relative bg-jam rounded-lg py-1 w-24      '>
-            <button className=' flex items-center gap-2  text-white' onClick={backHandler}>
+    <div className='max-w-8xl px-12 mx-auto md:mt-6 mt-12'>
+        <div className='relative bg-jam rounded-lg py-1 w-24  '>
+            <button className=' flex items-center gap-2 text-white' onClick={backHandler}>
             <Back/> Back</button>    
         </div>
-        <div className='max-w-6xl mx-auto grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 
+        <div className='max-w-6xl grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 
             md:gap-6 gap-10 mt-16 mb-10  '>
             {filteredCountries.map((branches)=>{
                 return(

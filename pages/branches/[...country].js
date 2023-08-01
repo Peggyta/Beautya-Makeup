@@ -5,10 +5,11 @@ import BranchSearchBar from "@/components/module/branch/BranchSearchBar";
 
 function FilterCountries({getData}) {
     const router = useRouter();
-    const[countries,codes] = router.query.country;
+    const[countries] = router.query.country;
     const filteredCountries = getData.filter((item)=> 
-    (item.country).toLowerCase() === countries.toLowerCase())
-    
+    (item.country).toLowerCase() === countries.toLowerCase());
+  
+
     return(
         <div className="max-w-8xl px-16 mt-12 md:mt-0">
             <BranchSearchBar info={filteredCountries} />

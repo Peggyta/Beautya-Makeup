@@ -6,8 +6,8 @@ const blogSchema = new Schema ({
     author: String,
     published: String,
     slug: String,
-    description: [Object],
-    more: [Object],
+    description: [String],
+    more: [String],
     usage: String,
     image: String,   
 });

@@ -12,11 +12,10 @@ import location from '../../../public/images/branchlocation.jpg';
 const BranchSearchBar = ({info}) => {
     const router = useRouter();
     const[countries, setCountries] = useState('');
-    const[codes, setCodes] = useState('');
    
     const searchHandler = () => {
-        if(countries || codes) {
-            router.push(`/branches/${countries}/${codes}`)
+        if(countries) {
+            router.push(`/branches/${countries}`)
         } else {
             alert('Please view all branches, or enter a valid country!')
         }
@@ -34,7 +33,7 @@ const BranchSearchBar = ({info}) => {
                         onChange={(e)=> setCountries(e.target.value)}
                         className='py-3 pl-4 text-lg border-b border-cement' 
                         placeholder='Address' />
-                    <p className='mt-1 pl-4'>City, Street Or Zip Code</p>
+                    <p className='mt-1 pl-4'>Enter Country</p>
                 </div> 
                     <button 
                         onClick={searchHandler}
@@ -53,12 +52,9 @@ const BranchSearchBar = ({info}) => {
             </div>
             <div className='flex justify-between mt-10 flex-col gap-6 mb-10 lg:flex-row items-center'>
                 <div className={countries ? 'overflow-y-scroll h-439': null}>
-                    
                     {info?.map((item)=>{
                         return(
-                            
-                                <BranchSearchCard {...item} key={item._id} />
-                            
+                                <BranchSearchCard {...item} key={item._id} /> 
                         )
                     })}
                 </div>
