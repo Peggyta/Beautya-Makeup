@@ -1,10 +1,11 @@
 import React from 'react';
-// import { shortenText } from '@/helper/function';
+import Link from 'next/link';
 
 const BlogCard = (props) => {
     const{title, category, author, published, slug, description} = props;
    
     return (
+        <Link href={`/blog/${slug}`}>
         <div className='flex flex-col md:w-392 w-full mx-auto border border-ash'>
             <div>
                 <img className='h-294 md:w-392 w-full object-cover' src={`/images/${slug}.jpg`} alt='blog pic' />
@@ -21,6 +22,7 @@ const BlogCard = (props) => {
                 <p>{(description[0]).slice(0,-135)+'...'}</p>
             </div>
         </div>
+        </Link>
     );
 };
 

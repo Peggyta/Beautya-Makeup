@@ -9,9 +9,7 @@ const Blog = ({data}) => {
                 md:gap-6 gap-10 mt-12 mb-16'>
                 {data.map((item)=> {
                 return(
-                    <div >
                         <BlogCard key={item._id} {...item} />
-                    </div> 
                 )
                 })}
             </div>
