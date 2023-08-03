@@ -3,6 +3,11 @@ import LatestBlogs from '../module/blog/LatestBlogs';
 
 const BlogDetails = (props) => {
     const{title, slug, description, category, author, published, more, usage} = props;
+    //to show the first letter larger than rest of the text
+    const selectDescription = description.toString().split('');
+    const selectFirstLetter = selectDescription[0];
+    const newDescription = selectDescription.slice(1).join('');
+    
     return (
         <div className='flex gap-6 md:flex-row flex-col max-w-8xl px-12 mx-auto md:mt-6 mt-12'>
             <div className='md:w-3/4 w-full text-raven mb-12'>
@@ -15,7 +20,10 @@ const BlogDetails = (props) => {
                     <span>|</span>
                     <p>{published}</p>
                 </div>
-                <p className='text-lg text-justify'>{(description)}</p>
+                <p className='text-lg text-justify'>
+                    <span className='font-bold sm:text-6xl text-3xl'>{selectFirstLetter}</span>
+                    {newDescription}
+                </p>
                 <div>
                     <h3 className='font-bold text-xl pt-2 pb-3'>Avoid popping pimples</h3>
                     <p className='text-lg text-justify'>{more}</p>
