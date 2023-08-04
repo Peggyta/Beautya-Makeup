@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 const BlogCard = (props) => {
     const{title, category, author, published, slug, description} = props;
+    const sliceDescription = (description[0]).slice(0,-135)+'...';
    
     return (
         <Link href={`/blog/${slug}`}>
@@ -19,7 +20,7 @@ const BlogCard = (props) => {
                 <p>{published}</p>
             </div>
             <div className='px-4 pb-6'>
-                <p>{(description[0]).slice(0,-135)+'...'}</p>
+                <p>{sliceDescription}</p>
             </div>
         </div>
         </Link>
