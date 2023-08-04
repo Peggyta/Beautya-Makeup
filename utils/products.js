@@ -1,9 +1,10 @@
 const product = {
     products: [
         {
-            tilte: 'Beautya  La Mousse Off/On Foaming Cleaner',
+            tilte: 'Beautya La Mousse Off/On Foaming Cleaner',
             description: 'Anti-Pollution Foaming Cleanser with Purifying French Water Lily',
             price: 65.00,
+            slug: 'Mousse',
             details: [
                 "Beautya's 1st revitalizing serum that concentrates the double power of the Rose de Granville from the stem to the flower to revitalize the skin twice as fast (1) and visibly rejuvenate.",
                 "Created after 20 years of research, the 10,000 (2) micro-pearls rich in revitalizing rose micro-nutrients are now completed by the power of the Rose sap. The next-generation, 92% natural-origin (3) formula of La Micro-Huile de Rose Advanced Serum is twice as concentrated,(4) combining the nourishing richness of an oil with the deep penetration of a serum.",
@@ -47,6 +48,7 @@ const product = {
             tilte: 'Beautya Prestige la Mousse Micellaire',
             description: 'Anti-Aging Face Serum, with Purifying French Water Lily',
             price: 520.00,
+            slug: 'Prestige',
             details: [
                 "Beautya's 1st revitalizing serum that concentrates the double power of the Rose de Granville from the stem to the flower to revitalize the skin twice as fast (1) and visibly rejuvenate.",
                 "Created after 20 years of research, the 10,000 (2) micro-pearls rich in revitalizing rose micro-nutrients are now completed by the power of the Rose sap. The next-generation, 92% natural-origin (3) formula of La Micro-Huile de Rose Advanced Serum is twice as concentrated,(4) combining the nourishing richness of an oil with the deep penetration of a serum.",
@@ -90,6 +92,7 @@ const product = {
             tilte: '1-2-1 expert advice',
             description: 'take some time to feel uplifted with a complimentary, bespoke beauty service. our team of experts are here to help in person.',
             price: 0,
+            slug: 'expert',
             details: [
                 "Beautya's 1st revitalizing serum that concentrates the double power of the Rose de Granville from the stem to the flower to revitalize the skin twice as fast (1) and visibly rejuvenate.",
                 "Created after 20 years of research, the 10,000 (2) micro-pearls rich in revitalizing rose micro-nutrients are now completed by the power of the Rose sap. The next-generation, 92% natural-origin (3) formula of La Micro-Huile de Rose Advanced Serum is twice as concentrated,(4) combining the nourishing richness of an oil with the deep penetration of a serum.",
@@ -130,9 +133,10 @@ const product = {
             image: '../public/images/3.png',
         },
         {
-            tilte: 'Beautya Prestige la Mousse Micellaire',
-            description: 'Anti-Aging Face Serum, with Purifying French Water Lily',
-            price: 65.00,
+            tilte: 'Beautya Dior Addict Lip Maximizer Gloss',
+            description: 'Intense Gloss - Color Awakening',
+            price: 234.00,
+            slug: 'Mice',
             details: [
                 "Beautya's 1st revitalizing serum that concentrates the double power of the Rose de Granville from the stem to the flower to revitalize the skin twice as fast (1) and visibly rejuvenate.",
                 "Created after 20 years of research, the 10,000 (2) micro-pearls rich in revitalizing rose micro-nutrients are now completed by the power of the Rose sap. The next-generation, 92% natural-origin (3) formula of La Micro-Huile de Rose Advanced Serum is twice as concentrated,(4) combining the nourishing richness of an oil with the deep penetration of a serum.",
@@ -173,9 +177,10 @@ const product = {
             image: '../public/images/4.jpg',
         },
         {
-            tilte: 'Beautya Prestige la Mousse Micellaire',
-            description: 'Anti-Aging Face Serum, with Purifying French Water Lily',
-            price: 65.00,
+            tilte: 'Beautya Dior Forever Glow Veil',
+            description: 'Radiance primer - concentrated in floral skincare',
+            price: 70.00,
+            slug: 'Serum',
             details: [
                 "Beautya's 1st revitalizing serum that concentrates the double power of the Rose de Granville from the stem to the flower to revitalize the skin twice as fast (1) and visibly rejuvenate.",
                 "Created after 20 years of research, the 10,000 (2) micro-pearls rich in revitalizing rose micro-nutrients are now completed by the power of the Rose sap. The next-generation, 92% natural-origin (3) formula of La Micro-Huile de Rose Advanced Serum is twice as concentrated,(4) combining the nourishing richness of an oil with the deep penetration of a serum.",
@@ -216,9 +221,10 @@ const product = {
             image: '../public/images/5.jpg',
         },
         {
-            tilte: 'Beautya Prestige la Mousse Micellaire',
+            tilte: 'Beautya Dior Backstage Face & Body Primer',
             description: 'Anti-Aging Face Serum, with Purifying French Water Lily',
-            price: 65.00,
+            price: 72.00,
+            slug: 'French',
             details: [
                 "Beautya's 1st revitalizing serum that concentrates the double power of the Rose de Granville from the stem to the flower to revitalize the skin twice as fast (1) and visibly rejuvenate.",
                 "Created after 20 years of research, the 10,000 (2) micro-pearls rich in revitalizing rose micro-nutrients are now completed by the power of the Rose sap. The next-generation, 92% natural-origin (3) formula of La Micro-Huile de Rose Advanced Serum is twice as concentrated,(4) combining the nourishing richness of an oil with the deep penetration of a serum.",
@@ -262,6 +268,7 @@ const product = {
             tilte: '#AWARDED',
             description: 'Global age-defying rich cream - intense nourishment & revitalisation Formulated with 88% natural-origin ingredients',
             price: 0,
+            slug: 'Cream',
             details: [
                 "Beautya's 1st revitalizing serum that concentrates the double power of the Rose de Granville from the stem to the flower to revitalize the skin twice as fast (1) and visibly rejuvenate.",
                 "Created after 20 years of research, the 10,000 (2) micro-pearls rich in revitalizing rose micro-nutrients are now completed by the power of the Rose sap. The next-generation, 92% natural-origin (3) formula of La Micro-Huile de Rose Advanced Serum is twice as concentrated,(4) combining the nourishing richness of an oil with the deep penetration of a serum.",
@@ -302,9 +309,10 @@ const product = {
             image: '../public/images/7.jpg',
         },
         {
-            tilte: 'Beautya Prestige la Mousse Micellaire',
-            description: 'Anti-Aging Face Serum, with Purifying French Water Lily',
-            price: 65.00,
+            tilte: 'Dior Diorshow Iconic Overcurl Mascara',
+            description: 'Spectacular Volume and Curl Mascara - Lash-Fortifying Care Effect',
+            price: 85.00,
+            slug: 'Face',
             details: [
                 "Beautya's 1st revitalizing serum that concentrates the double power of the Rose de Granville from the stem to the flower to revitalize the skin twice as fast (1) and visibly rejuvenate.",
                 "Created after 20 years of research, the 10,000 (2) micro-pearls rich in revitalizing rose micro-nutrients are now completed by the power of the Rose sap. The next-generation, 92% natural-origin (3) formula of La Micro-Huile de Rose Advanced Serum is twice as concentrated,(4) combining the nourishing richness of an oil with the deep penetration of a serum.",
@@ -345,9 +353,10 @@ const product = {
             image: '../public/images/8.jpg',
         },
         {
-            tilte: 'Beautya Prestige la Mousse Micellaire',
-            description: 'Anti-Aging Face Serum, with Purifying French Water Lily',
-            price: 65.00,
+            tilte: 'Beautya Dior Forever Foundation SPF',
+            description: 'Satin, Matte, Metallic & New Velvet. 81 shades',
+            price: 112.00,
+            slug: 'Water',
             details: [
                 "Beautya's 1st revitalizing serum that concentrates the double power of the Rose de Granville from the stem to the flower to revitalize the skin twice as fast (1) and visibly rejuvenate.",
                 "Created after 20 years of research, the 10,000 (2) micro-pearls rich in revitalizing rose micro-nutrients are now completed by the power of the Rose sap. The next-generation, 92% natural-origin (3) formula of La Micro-Huile de Rose Advanced Serum is twice as concentrated,(4) combining the nourishing richness of an oil with the deep penetration of a serum.",
@@ -390,7 +399,8 @@ const product = {
         {
             tilte: 'Beautya Prestige la Mousse Micellaire',
             description: 'Anti-Aging Face Serum, with Purifying French Water Lily',
-            price: 65.00,
+            price: 76.00,
+            slug: 'Lily',
             details: [
                 "Beautya's 1st revitalizing serum that concentrates the double power of the Rose de Granville from the stem to the flower to revitalize the skin twice as fast (1) and visibly rejuvenate.",
                 "Created after 20 years of research, the 10,000 (2) micro-pearls rich in revitalizing rose micro-nutrients are now completed by the power of the Rose sap. The next-generation, 92% natural-origin (3) formula of La Micro-Huile de Rose Advanced Serum is twice as concentrated,(4) combining the nourishing richness of an oil with the deep penetration of a serum.",
@@ -431,9 +441,10 @@ const product = {
             image: '../public/images/10.jpg',
         },
         {
-            tilte: 'Beautya Prestige la Mousse Micellaire',
-            description: 'Anti-Aging Face Serum, with Purifying French Water Lily',
+            tilte: 'Beautya Dior Contour Lip Liner',
+            description: 'Creates a complexion range that are the first steps in a full routine',
             price: 65.00,
+            slug: 'Beauty',
             details: [
                 "Beautya's 1st revitalizing serum that concentrates the double power of the Rose de Granville from the stem to the flower to revitalize the skin twice as fast (1) and visibly rejuvenate.",
                 "Created after 20 years of research, the 10,000 (2) micro-pearls rich in revitalizing rose micro-nutrients are now completed by the power of the Rose sap. The next-generation, 92% natural-origin (3) formula of La Micro-Huile de Rose Advanced Serum is twice as concentrated,(4) combining the nourishing richness of an oil with the deep penetration of a serum.",
@@ -474,9 +485,10 @@ const product = {
             image: '../public/images/11.jpg',
         },
         {
-            tilte: 'Beautya Prestige la Mousse Micellaire',
+            tilte: 'Dior Forever Natural Bronze Powder',
             description: 'Anti-Aging Face Serum, with Purifying French Water Lily',
-            price: 65.00,
+            price: 125.00,
+            slug: 'Pearl',
             details: [
                 "Beautya's 1st revitalizing serum that concentrates the double power of the Rose de Granville from the stem to the flower to revitalize the skin twice as fast (1) and visibly rejuvenate.",
                 "Created after 20 years of research, the 10,000 (2) micro-pearls rich in revitalizing rose micro-nutrients are now completed by the power of the Rose sap. The next-generation, 92% natural-origin (3) formula of La Micro-Huile de Rose Advanced Serum is twice as concentrated,(4) combining the nourishing richness of an oil with the deep penetration of a serum.",

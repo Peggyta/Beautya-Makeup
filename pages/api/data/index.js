@@ -10,29 +10,44 @@ export default async function handler(req, res) {
         .status(500)
         .json({status: 'failed', message: 'connection failed'});
     }
-    
-        try {
-            const blogs = await BlogModel.create({
-            
-            });       
+    if(req.method === 'GET') {
+        try{
+            const getBlogs = await BlogModel.find();
             res
             .status(200)
-            .json({status: 'success', message:'data created', data: blogs});
-            
-            // res
-            // .status(200)
-            // .json({status:'success', data: getBranches});
-            // const getCountries = await Branch.find();
-            // res
-            // .status(200)
-            // .json({status:'success', data: getCountries});
+            .json({status:'success', data: getBlogs});
 
         } catch(err) {
             console.log(err);
             res
             .status(500)
-            .json({status:'failed', message: 'failed to store data in database'});
+            .json({status:'failed', message: 'failed to retrirving data from database'});
             return;
         }
-      
+    }
 }
+//         try {
+//             // const blogs = await BlogModel.create({
+            
+//             // });       
+//             // res
+//             // .status(200)
+//             // .json({status: 'success', message:'data created', data: blogs});
+            
+//             // res
+//             // .status(200)
+//             // .json({status:'success', data: getBranches});
+//             // const getCountries = await Branch.find();
+//             // res
+//             // .status(200)
+//             // .json({status:'success', data: getCountries});
+
+//         } catch(err) {
+//             console.log(err);
+//             res
+//             .status(500)
+//             .json({status:'failed', message: 'failed to store data in database'});
+//             return;
+//         }
+      
+// }

@@ -1,16 +1,26 @@
 import React from 'react';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 import LatestBlogs from '../module/blog/LatestBlogs';
+
 
 const BlogDetails = (props) => {
     const{title, slug, description, category, author, published, more, usage} = props;
+    
     //to show the first letter larger than rest of the text
     const selectDescription = description.toString().split('');
     const selectFirstLetter = selectDescription[0];
     const newDescription = selectDescription.slice(1).join('');
     
+    const router = useRouter();
+    const {asPath} = router;
+
     return (
         <div className='flex gap-6 md:flex-row flex-col max-w-8xl px-12 mx-auto md:mt-6 mt-12'>
             <div className='md:w-3/4 w-full text-raven mb-12'>
+                <div className='mb-6'>
+                    <Link className="font-bold" href={`${asPath}`}>{asPath}</Link>
+                </div> 
                 <img className='w-full h-474 object-cover' src={`/images/${slug}.jpg`} alt='blog' />
                 <h2 className='font-bold md:text-3xl text-xl pb-4 pt-6'>{title}</h2>
                 <div className='flex sm:text-base font-semibold text-xs sm:gap-1 text-cement pb-4'>

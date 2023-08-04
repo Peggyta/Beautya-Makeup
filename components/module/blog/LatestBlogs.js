@@ -14,7 +14,7 @@ const LatestBlogs = () => {
     const[otherBlogs, setOtherBlogs] = useState([]);
     const router = useRouter();
     const {slug} = router.query;
-    
+   
     //fetching data client-side
     useEffect(()=>{
         fetch('/api/data')
@@ -43,7 +43,7 @@ const LatestBlogs = () => {
                             <Link key={item._id} href={item.slug}>
                                 <div className='flex items-center text-raven border border-ash gap-2 mt-4'>
                                     <img className='lg:w-28 lg:h-28 w-20 h-20 object-cover' 
-                                    src={`/images/${slug}.jpg`} />
+                                    src={`/images/${item.slug}.jpg`} />
                                     <p className='text-sm'>{item.title}</p>
                                 </div>           
                             </Link>      
