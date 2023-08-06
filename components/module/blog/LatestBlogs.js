@@ -26,9 +26,9 @@ const LatestBlogs = () => {
     const randomBlogs = filterBlogs.slice(4,9);
     // console.log(randomBlogs);
     return (
-        <div className='w-full flex flex-col mb-12'>
+        <div className='w-full flex flex-col mb-12 md:mt-12'>
             <div className='flex lg:gap-6 md:gap-2 sm:gap-10 gap-4 px-2 items-center justify-center py-4
-             border border-ash  fill-black'>
+             border border-ash fill-black'>
                 <Copy />
                 <BlogReddit />
                 <BlogFB />
