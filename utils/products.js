@@ -37,9 +37,9 @@ const product = {
                 "Type-Serums"
             ],
             features: [
-                {skin: "All Types Of Skin"},
-                {timing: "Am Or Pm"},
-                {type: "brightening"}
+                "All Types Of Skin",
+                "Am Or Pm",
+                "brightening",
             ],
             feature: "Formulated with 92% natural-origin ingredients",
             image: '../public/images/1.jpg',
@@ -81,9 +81,9 @@ const product = {
                 "Type-Serums"
             ],
             features: [
-                {skin: "All Types Of Skin"},
-                {timing: "Am Or Pm"},
-                {type: "brightening"}
+                "All Types Of Skin",
+                "Am Or Pm",
+                "brightening",
             ],
             feature: "Formulated with 92% natural-origin ingredients",
             image: '../public/images/2.jpg',
@@ -125,9 +125,9 @@ const product = {
                 "Type-Serums"
             ],
             features: [
-                {skin: "All Types Of Skin"},
-                {timing: "Am Or Pm"},
-                {type: "brightening"}
+                "All Types Of Skin",
+                "Am Or Pm",
+                "brightening",
             ],
             feature: "Formulated with 92% natural-origin ingredients",
             image: '../public/images/3.png',
@@ -169,9 +169,9 @@ const product = {
                 "Type-Serums"
             ],
             features: [
-                {skin: "All Types Of Skin"},
-                {timing: "Am Or Pm"},
-                {type: "brightening"}
+                "All Types Of Skin",
+                "Am Or Pm",
+                "brightening",
             ],
             feature: "Formulated with 92% natural-origin ingredients",
             image: '../public/images/4.jpg',
@@ -213,9 +213,9 @@ const product = {
                 "Type-Serums"
             ],
             features: [
-                {skin: "All Types Of Skin"},
-                {timing: "Am Or Pm"},
-                {type: "brightening"}
+                "All Types Of Skin",
+                "Am Or Pm",
+                "brightening",
             ],
             feature: "Formulated with 92% natural-origin ingredients",
             image: '../public/images/5.jpg',
@@ -257,9 +257,9 @@ const product = {
                 "Type-Serums"
             ],
             features: [
-                {skin: "All Types Of Skin"},
-                {timing: "Am Or Pm"},
-                {type: "brightening"}
+                "All Types Of Skin",
+                "Am Or Pm",
+                "brightening",
             ],
             feature: "Formulated with 92% natural-origin ingredients",
             image: '../public/images/6.jpg',
@@ -301,9 +301,9 @@ const product = {
                 "Type-Serums"
             ],
             features: [
-                {skin: "All Types Of Skin"},
-                {timing: "Am Or Pm"},
-                {type: "brightening"}
+                "All Types Of Skin",
+                "Am Or Pm",
+                "brightening",
             ],
             feature: "Formulated with 92% natural-origin ingredients",
             image: '../public/images/7.jpg',
@@ -345,9 +345,9 @@ const product = {
                 "Type-Serums"
             ],
             features: [
-                {skin: "All Types Of Skin"},
-                {timing: "Am Or Pm"},
-                {type: "brightening"}
+                "All Types Of Skin",
+                "Am Or Pm",
+                "brightening",
             ],
             feature: "Formulated with 92% natural-origin ingredients",
             image: '../public/images/8.jpg',
@@ -389,9 +389,9 @@ const product = {
                 "Type-Serums"
             ],
             features: [
-                {skin: "All Types Of Skin"},
-                {timing: "Am Or Pm"},
-                {type: "brightening"}
+                "All Types Of Skin",
+                "Am Or Pm",
+                "brightening",
             ],
             feature: "Formulated with 92% natural-origin ingredients",
             image: '../public/images/9.jpg',
@@ -433,9 +433,9 @@ const product = {
                 "Type-Serums"
             ],
             features: [
-                {skin: "All Types Of Skin"},
-                {timing: "Am Or Pm"},
-                {type: "brightening"}
+                "All Types Of Skin",
+                "Am Or Pm",
+                "brightening",
             ],
             feature: "Formulated with 92% natural-origin ingredients",
             image: '../public/images/10.jpg',
@@ -477,9 +477,9 @@ const product = {
                 "Type-Serums"
             ],
             features: [
-                {skin: "All Types Of Skin"},
-                {timing: "Am Or Pm"},
-                {type: "brightening"}
+                "All Types Of Skin",
+                "Am Or Pm",
+                "brightening",
             ],
             feature: "Formulated with 92% natural-origin ingredients",
             image: '../public/images/11.jpg',
@@ -521,9 +521,9 @@ const product = {
                 "Type-Serums"
             ],
             features: [
-                {skin: "All Types Of Skin"},
-                {timing: "Am Or Pm"},
-                {type: "brightening"}
+                "All Types Of Skin",
+                "Am Or Pm",
+                "brightening",
             ],
             feature: "Formulated with 92% natural-origin ingredients",
             image: '../public/images/12.jpg',

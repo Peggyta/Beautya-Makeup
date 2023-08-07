@@ -80,7 +80,7 @@ const FilterProducts = () => {
                     </div>
                 </div>
                 <div>
-                <div className='flex justify-between cursor-pointer' onClick={() => setPriceOpen(!priceOpen)}>
+                <div className='flex justify-between cursor-pointer pb-3' onClick={() => setPriceOpen(!priceOpen)}>
                         <p className={priceOpen ? 'text-lily font-bold': 'text-raven font-bold'}>Price</p>
                         <div className={priceOpen ? 'stroke-lily rotate-180 transition' : 'stroke-raven'}><ArrowDown /></div>   
                     </div>

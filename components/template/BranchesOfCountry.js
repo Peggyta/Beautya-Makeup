@@ -1,22 +1,20 @@
 import { useRouter } from 'next/router';
 import React from 'react';
 import BranchCard from '../module/branch/BranchCard';
-//icon
-import Back from '../icons/Back';
+import Link from 'next/link';
 
 const BranchesOfCountry = ({info}) => {
     const router = useRouter();
     const {country} = router.query;
     const filteredCountries = info.filter((item)=> item.country === country);
-   const backHandler = () => {
-    router.back()
-   };
 
     return (
-    <div className='max-w-8xl px-12 mx-auto md:mt-6 mt-12'>
-        <div className='relative bg-jam rounded-lg py-1 w-24  '>
-            <button className=' flex items-center gap-2 text-white' onClick={backHandler}>
-            <Back/> Back</button>    
+    <div className='max-w-8xl px-12 mx-auto pt-6 md:mt-0 mt-6'>
+        <div className='flex gap-2 font-semibold text-sm '>
+            <Link className='text-cement' href='/'>Home / </Link>
+            <Link className='text-cement' href='/branches'>Branches / </Link>
+            <Link className='text-cement' href='/branches/all-branches'>All Branches /</Link>
+            <Link className='text-raven' href={`${country}`}>{country}</Link>
         </div>
         <div className='max-w-6xl grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 
             md:gap-6 gap-10 mt-16 mb-10  '>

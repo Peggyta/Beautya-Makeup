@@ -1,6 +1,6 @@
 import React from 'react';
 import ListOfCountries from '../module/branch/ListOfCountries';
-// import CountriesList from '../module/branch/CountriesList';
+import Link from 'next/link';
 
 const AllBranches = () => {
     //to filter duplicate name of countries
@@ -9,6 +9,11 @@ const AllBranches = () => {
     // };
     return (
         <div className='max-w-8xl mx-auto px-12 text-raven md:px-10 px-4 bg-dust'>
+            <div className='flex gap-2 font-semibold text-sm pt-6'>
+                <Link className='text-cement' href='/'>Home / </Link>
+                <Link className='text-cement' href='/branches'>Branches / </Link>
+                <Link className='text-raven' href='/branches/all-branches'>All Branches</Link>
+            </div>
             <h2 className='font-bold text-3xl my-3'>All Branches</h2>
             <p className='md:text-lg text-base font-bold'>Discover Our Branches By Searching For Country Or Region Or Clicking
             On The Country Lists Below.</p>

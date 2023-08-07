@@ -50,6 +50,7 @@ module.exports = {
         'cement': '#606060',
         'neutral': '#868686',
         'rose': '#fbeff2',
+        'lily': '#a10550',
         'mulberry': '#79043c',
         'sangria': '#280114',
         'rasin': '#14010a',

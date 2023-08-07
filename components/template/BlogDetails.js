@@ -16,11 +16,13 @@ const BlogDetails = (props) => {
     const {asPath} = router;
 
     return (
-        <div className='flex gap-6 md:flex-row flex-col max-w-8xl px-12 mx-auto md:mt-6 mt-12'>
+        <div className='flex gap-6 md:flex-row flex-col max-w-8xl px-12 mx-auto md:mt-0 mt-6'>
             <div className='md:w-3/4 w-full text-raven mb-12'>
-                <div className='mb-6'>
-                    <Link className="font-bold" href={`${asPath}`}>{asPath}</Link>
-                </div> 
+            <div className='flex gap-2 font-semibold text-sm py-6'>
+                <Link className='text-cement' href='/'>Home / </Link>
+                <Link className='text-cement' href='/blog'>Blog /</Link>
+                <Link className='text-raven' href={`/blog/${slug}`}>{slug}</Link>
+            </div>
                 <img className='w-full h-474 object-cover' src={`/images/${slug}.jpg`} alt='blog' />
                 <h2 className='font-bold md:text-3xl text-xl pb-4 pt-6'>{title}</h2>
                 <div className='flex sm:text-base font-semibold text-xs sm:gap-1 text-cement pb-4'>

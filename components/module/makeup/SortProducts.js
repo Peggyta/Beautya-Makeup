@@ -11,7 +11,7 @@ const SortProducts = () => {
              <div className='lg:hidden block bg-white border border-ash w-32 
              flex items-center justify-center px-2 gap-1 py-2'>
                 <FilterIcon />
-                <button onClick={()=> setIsOpen(!open)} className='font-bold text-sm'>Filter</button>
+                <button onClick={()=> setIsOpen(!open)} className='font-bold w-full text-sm'>Filter</button>
              </div>
                 <select className='lg:border-inherit py-2 text-sm font-bold border border-ash 
                 bg-white px-1'>

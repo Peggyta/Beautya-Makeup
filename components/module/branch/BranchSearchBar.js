@@ -23,6 +23,10 @@ const BranchSearchBar = ({info}) => {
     
     return (
         <div className='max-w-8xl mx-auto'>
+            <div className='flex gap-2 font-semibold text-sm pt-6'>
+                <Link className='text-cement' href='/'>Home / </Link>
+                <Link className='text-raven' href='/branches'>Branches</Link>
+            </div>
             <h2 className='text-raven font-bold text-3xl my-3'>Beautya Branches</h2>
             <div className='w-full flex md:flex-row flex-col items-center justify-between'>
                 <div className='w-full md:w-3/4 flex md:flex-row flex-col items-center lg:gap-4 gap-3'>
