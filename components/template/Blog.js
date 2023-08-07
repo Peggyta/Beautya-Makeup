@@ -1,7 +1,10 @@
 import React from 'react';
+import Skeleton from 'react-loading-skeleton';
 import BlogCard from '../module/blog/BlogCard';
+import "react-loading-skeleton/dist/skeleton.css";
 
 const Blog = ({data}) => {
+
     return (
         <div className='max-w-8xl text-raven'>
             <h2 className=' font-bold text-3xl my-3'>Blog</h2>
@@ -11,7 +14,7 @@ const Blog = ({data}) => {
                 return(
                         <BlogCard key={item._id} {...item} />       
                 )
-                })}
+                }) || <Skeleton />}
             </div>
         </div>
     );

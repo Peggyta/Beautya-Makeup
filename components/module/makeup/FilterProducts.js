@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import Toggle from './Toggle';
 import ArrowDown from '@/components/icons/ArrowDown';
-import ArrowUp from '@/components/icons/ArrowUp';
 
 const FilterProducts = () => {
     const[categoryOpen, setCategoryOpen] = useState(false);
@@ -12,7 +11,7 @@ const FilterProducts = () => {
     return (
         <div className='bg-white'>
             <div className='flex border-t border-b border-ash justify-between h-14 items-center px-4 mt-4'>
-                <p className='font-bold'>Out Of Stock Items</p>
+                <p className='font-bold lg:text-base text-sm'>Out Of Stock Items</p>
                 <Toggle />
             </div>
             <div className='mt-3 px-4 flex-col flex gap-6'>

@@ -26,11 +26,11 @@ const Layout = ({children}) => {
                 </div>
                 <div className='md:flex items-center w-max lg:gap-x-10 gap-x-2 justify-center 
                 font-bold text-midnight hidden lg:text-base text-sm'>
-                    <Link href='/'>Women Make UP</Link>
                     <Link href='/blog'>Blog</Link>
-                    <Link href='/'>Women Skincare</Link>
+                    <Link href='/women-makeup'>Women Make UP</Link>
                     <Link href='/branches'>Branches</Link>
                     <Link href='/our-brand'>Our Brand</Link>
+                    <Link href='/'>Contact Us</Link>
                 </div>
                 <div className='hidden md:flex gap-x-2 w-max items-center'>
                     <Search /> 
@@ -41,7 +41,7 @@ const Layout = ({children}) => {
                     </ul>   
                 </div>
             </header>
-            <div className='min-h-screen w-full'>{children}</div>
+            <div className='min-h-screen w-full bg-dust'>{children}</div>
             <footer className='w-full'>
                 <FooterSecOne />
                 <FooterSecTwo />
