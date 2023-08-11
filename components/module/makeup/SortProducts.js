@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { useRouter } from 'next/router';
 import FilterIcon from '@/components/icons/FilterIcon';
 import FilterProducts from './FilterProducts';
@@ -15,7 +15,13 @@ const SortProducts = ({data}) => {
             query,
         })
     };
-  
+    useEffect(()=>{
+        const{price} = router.query;
+        if(query.price !== price) {
+            setQuery({price})
+        }
+    },[])
+
     return (
         <>
         <div className='max-w-8xl mx-auto lg:px-12 px-4'>
