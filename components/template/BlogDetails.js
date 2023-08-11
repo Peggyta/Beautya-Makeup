@@ -11,9 +11,6 @@ const BlogDetails = (props) => {
     const selectDescription = description.toString().split('');
     const selectFirstLetter = selectDescription[0];
     const newDescription = selectDescription.slice(1).join('');
-    
-    const router = useRouter();
-    const {asPath} = router;
 
     return (
         <div className='flex gap-6 md:flex-row flex-col max-w-8xl px-12 mx-auto md:mt-0 mt-6'>

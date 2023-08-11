@@ -27,7 +27,7 @@ const Layout = ({children}) => {
                 <div className='md:flex items-center w-max lg:gap-x-10 gap-x-2 justify-center 
                 font-bold text-midnight hidden lg:text-base text-sm'>
                     <Link href='/blog'>Blog</Link>
-                    <Link href='/women-makeup'>Women Make UP</Link>
+                    <Link href='/women-makeup'>Women Makeup</Link>
                     <Link href='/branches'>Branches</Link>
                     <Link href='/our-brand'>Our Brand</Link>
                     <Link href='/'>Contact Us</Link>
