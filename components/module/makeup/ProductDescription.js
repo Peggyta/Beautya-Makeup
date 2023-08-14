@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
 //function
-import { boldSteps, usageWithoutSteps } from '@/helper/function';
+import { boldSteps, usageWithoutSteps, showLessIngredient, showIngredient } from '@/helper/function';
 
 const ProductDescription = (props) => {
     const[moreDetails, setMoreDetails] = useState(false);
     const[moreText, setMoreText] = useState(false);
     const[moreSpecification, setMoreSpecification] = useState(false);
+    const[moreIngredient, setMoreIngredient] = useState(false);
 
     const{  
         details, 
@@ -26,6 +27,10 @@ const ProductDescription = (props) => {
 
     const specificationHandler = () => {
         setMoreSpecification(!moreSpecification)
+    };
+
+    const IngredientHandler = () => {
+        setMoreIngredient(!moreIngredient)
     };
     
     return (
@@ -73,7 +78,13 @@ const ProductDescription = (props) => {
                 </div>
                 <div id='third-section' className='border-b border-ash pb-4'>
                     <h3 className='font-bold text-lily font-xl mb-3 mt-4'>Ingredient</h3>
-                    <p>{ingredient}</p>
+                    <p>{showLessIngredient(ingredient)}</p>
+                    {moreIngredient && (
+                        <p>{showIngredient(ingredient)}</p>
+                    )}
+                    <button onClick={IngredientHandler} className='text-lily font-semibold pl-4 py-4'>
+                        {moreIngredient ? 'Read Less <' : 'Read More >'}
+                    </button>
                 </div>
                 <div id='forth-section' className='border-b border-ash pb-4'>
                     <h3 className='font-bold text-lily font-xl mb-3 mt-4'>What Makes It Advance</h3>
