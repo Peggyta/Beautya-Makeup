@@ -88,7 +88,7 @@ const MobileProductDescription = (props) => {
                     <p>{more[3]}</p>
                 </div>
             )}
-            <div className='flex justify-between items-center font-semibold mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
+            <div className='flex justify-between items-center font-semibold  mt-1 pb-1 pt-3 border-t border-ash' 
             onClick={()=> setIsSpecification(!isSpecification)}>
                 <button className={isSpecification ? 'text-lily py-2': 'text-raven'}>Product Specification</button>
                 <span className='text-2xl transition'>
@@ -102,6 +102,7 @@ const MobileProductDescription = (props) => {
                     <p>{specification[4]}</p>
                 </div>
             )}
+            <div className='border-b border-ash pb-2'></div>
         </div>
     );
 };
