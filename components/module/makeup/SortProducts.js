@@ -50,7 +50,7 @@ const SortProducts = ({data}) => {
             </div>
         </div>
         <div className='w-full mx-auto grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 
-                md:gap-6 gap-10 mt-4'>
+                md:gap-6 gap-10 my-4'>
             {data?.map((item)=>{
             return <ProductCard key={item._id} {...item} />
             })}

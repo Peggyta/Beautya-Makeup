@@ -35,7 +35,7 @@ const ProductIntroduction = (props) => {
                         <p className='font-bold text-raven lg:pb-4 md:pb-3 text-2xl'> {price ? `${price} $`  : null}</p>
                         <div className={price ? 'block': 'hidden'}>
                             <select className=' w-full py-4 border-b text-cement border-ash'>
-                                <option>30ml $</option>
+                                <option>30ml</option>
                             </select>
                             <div className='bg-lily flex lg:my-4 my-3 items-center relative hover:bg-neon transition'>
                                 <div className='absolute lg:left-12 left-6'><ProductLocation /></div>

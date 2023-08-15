@@ -34,7 +34,7 @@ const ProductDescription = (props) => {
     };
     
     return (
-        <div className='w-max-8xl mx-auto px-10 font-xl my-6 text-raven'>
+        <div className='w-max-8xl mx-auto px-10 font-xl my-6 text-raven hidden md:block'>
             <div className='flex text-cement font-bold justify-between border-b border-cement pb-1'>
                 <Link href='#first-section'>Product Details</Link>
                 <Link href='#second-section'>How To Apply</Link>
