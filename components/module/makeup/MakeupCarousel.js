@@ -21,11 +21,11 @@ const MakeupCarousel = () => {
                 </Carousel>
             </div>
             <div className='relative z-10'>
-                <div className='relative z-20 gap-4 justify-center px-4 hidden md:flex'>
-                    <Image src={makeUpOne} alt='makeup' width={288} height={288}  />
-                    <Image src={makeUpTwo} alt='makeup' width={288} height={288} />
-                    <Image src={makeUpThree} alt='makeup' width={288} height={288} />
-                    <Image src={makeUpFour} alt='makeup' width={288} height={288} />
+                <div className='relative z-20 gap-4 w-full justify-center px-4 hidden md:flex'>
+                    <Image src={makeUpOne} alt='makeup'  sizes="(max-width: 768px) 100px 100px, (max-width: 1200px) 288px, 288px"   />
+                    <Image src={makeUpTwo} alt='makeup' sizes="(max-width: 768px) 100px 100px, (max-width: 1200px) 288px, 288px" />
+                    <Image src={makeUpThree} alt='makeup' sizes="(max-width: 768px) 100px 100px, (max-width: 1200px) 288px, 288px" />
+                    <Image src={makeUpFour} alt='makeup' sizes="(max-width: 768px) 100px 100px, (max-width: 1200px) 288px, 288px" />
                 </div>
                 <div className='text-center text-white text-lg mt-4 px-6'>
                     <p>

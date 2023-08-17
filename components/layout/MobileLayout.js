@@ -45,7 +45,7 @@ const MobileLayout = () => {
                 <Link href='/women-makeup'>Women Makeup</Link>
                 <Link href='/branches'>Branches</Link>
                 <Link href='/our-brand'>Our Brand</Link>
-                <Link href='/'>Contact Us</Link> 
+                <Link href='/contact-us'>Contact Us</Link> 
             </div>            
         </div>
     </>

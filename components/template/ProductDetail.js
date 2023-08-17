@@ -5,21 +5,16 @@ import { shortenTitle } from '@/helper/function';
 //modules
 import ProductIntroduction from '../module/makeup/ProductIntroduction';
 import ProductDescription from '../module/makeup/ProductDescription';
+import MobileProductDescription from '../module/makeup/MobileProductDescription';
+import MakeupCarousel from '../module/makeup/MakeupCarousel';
+import Questions from '../module/makeup/Questions';
+import Recommendation from '../module/makeup/Recommendation';
 
 const ProductDetail = (props) => {
     console.log(props);
     const{
-            price, 
-            slug, 
-            description, 
-            details, 
-            feature, 
-            features, 
-            more, 
+            slug,  
             title, 
-            usage,
-            specification,
-            ingredient
         } = props;
     return (
         <div className='w-max-8xl mx-auto'>
@@ -30,7 +25,10 @@ const ProductDetail = (props) => {
             </div>
             <ProductIntroduction {...props} />
             <ProductDescription {...props} />
-            
+            <MobileProductDescription {...props} />
+            <MakeupCarousel />
+            <Questions />
+            <Recommendation />    
         </div>
     );
 };

@@ -14,14 +14,14 @@ const Questions = () => {
     const[questionNine, setQustionNine] = useState(false);
 
     return (
-        <div className='px-10 mx-auto w-max-8xl text-raven text-sm mt-8 cursor-pointer'>
+        <div className='px-10 mx-auto w-max-8xl bg-white text-raven text-sm pt-8 cursor-pointer'>
             <h2 className='font-bold text-xl text-center mb-6'>Prestige lA Micro-Huile Serum Frequently Asked Questions</h2>
-            <div className='flex justify-between items-center text-lg font-bold mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
+            <div className='flex justify-between items-center md:text-lg gap-2 font-bold mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
                 onClick={()=> setQustionOne(!questionOne)}>
                 <button className={questionOne ? 'text-lily py-2': 'text-raven'}>
                     What is the best way to use this product?
                 </button>
-                <span className='text-2xl transition'>
+                <span className='sm:text-2xl text-lg transition'>
                     {questionOne ? <Minus /> : '+'}
                 </span>
             </div>
@@ -36,12 +36,12 @@ const Questions = () => {
                      experience any discomfort, discontinue use of the product immediately.
                 </p>
             )}
-            <div className='flex justify-between items-center text-lg font-bold mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
+            <div className='flex justify-between items-center md:text-lg gap-2 font-bold mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
                 onClick={()=> setQustionTwo(!questionTwo)}>
                 <button className={questionTwo ? 'text-lily py-2': 'text-raven'}>
                     Can this product be used on all skin types?
                 </button>
-                <span className='text-2xl transition'>
+                <span className='sm:text-2xl text-lg transition'>
                     {questionTwo ? <Minus /> : '+'}
                 </span>
             </div>
@@ -49,39 +49,32 @@ const Questions = () => {
                 <p className='text-justify pb-2 text-lg'>
                      Our product is suitable for most skin types, including normal, 
                      oily, dry, and combination skin. However, if you have sensitive
-                     skin or a skin condition, we recommend performing a patch test 
-                     before using the product all over your face. Apply a small amount 
-                     of the product to the inside of your elbow and wait 24 hours to make 
-                     sure you do not have an allergic reaction or irritation. If you 
-                     experience any discomfort, discontinue use of the product immediately.
+                     skin or a skin condition.
                 </p>
             )}
-            <div className='flex justify-between items-center text-lg font-bold mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
+            <div className='flex justify-between items-center md:text-lg gap-2 font-bold mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
                 onClick={()=> setQustionThree(!questionThree)}>
                 <button className={questionThree ? 'text-lily py-2': 'text-raven'}>
                     Can this product be used on all skin types?
                 </button>
-                <span className='text-2xl transition'>
+                <span className='sm:text-2xl text-lg transition'>
                     {questionThree ? <Minus /> : '+'}
                 </span>
             </div>
             {questionThree && (
                 <p className='text-justify pb-2 text-lg'>
-                     Our product is suitable for most skin types, including normal, 
-                     oily, dry, and combination skin. However, if you have sensitive
-                     skin or a skin condition, we recommend performing a patch test 
-                     before using the product all over your face. Apply a small amount 
+                     Apply a small amount 
                      of the product to the inside of your elbow and wait 24 hours to make 
                      sure you do not have an allergic reaction or irritation. If you 
                      experience any discomfort, discontinue use of the product immediately.
                 </p>
             )}
-            <div className='flex justify-between items-center text-lg font-bold mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
+            <div className='flex justify-between items-center md:text-lg gap-2 font-bold mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
                 onClick={()=> setQustionFour(!questionFour)}>
                 <button className={questionFour ? 'text-lily py-2': 'text-raven'}>
                     How often should I use this product?
                 </button>
-                <span className='text-2xl transition'>
+                <span className='sm:text-2xl text-lg transition'>
                     {questionFour ? <Minus /> : '+'}
                 </span>
             </div>
@@ -90,78 +83,68 @@ const Questions = () => {
                      Our product is suitable for most skin types, including normal, 
                      oily, dry, and combination skin. However, if you have sensitive
                      skin or a skin condition, we recommend performing a patch test 
-                     before using the product all over your face. Apply a small amount 
-                     of the product to the inside of your elbow and wait 24 hours to make 
-                     sure you do not have an allergic reaction or irritation. If you 
+                     before using the product all over your face. If you 
                      experience any discomfort, discontinue use of the product immediately.
                 </p>
             )}
-            <div className='flex justify-between items-center text-lg font-bold mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
+            <div className='flex justify-between items-center md:text-lg font-bold gap-2 mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
                 onClick={()=> setQustionFive(!questionFive)}>
                 <button className={questionFive ? 'text-lily py-2': 'text-raven'}>
                     Can this product be used during pregnancy?
                 </button>
-                <span className='text-2xl transition'>
+                <span className='sm:text-2xl text-lg transition'>
                     {questionFive ? <Minus /> : '+'}
                 </span>
             </div>
             {questionFive && (
                 <p className='text-justify pb-2 text-lg'>
-                     Our product is suitable for most skin types, including normal, 
-                     oily, dry, and combination skin. However, if you have sensitive
-                     skin or a skin condition, we recommend performing a patch test 
-                     before using the product all over your face. Apply a small amount 
-                     of the product to the inside of your elbow and wait 24 hours to make 
-                     sure you do not have an allergic reaction or irritation. If you 
-                     experience any discomfort, discontinue use of the product immediately.
+                    If you 
+                    experience any discomfort, discontinue use of the product immediately.
                 </p>
             )}
-            <div className='flex justify-between items-center text-lg font-bold mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
+            <div className='flex justify-between items-center md:text-lg font-bold gap-2 mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
                 onClick={()=> setQustionSix(!questionSix)}>
                 <button className={questionSix ? 'text-lily py-2': 'text-raven'}>
                     How often should I use this product?
                 </button>
-                <span className='text-2xl transition'>
+                <span className='sm:text-2xl text-lg transition'>
                     {questionSix ? <Minus /> : '+'}
                 </span>
             </div>
             {questionSix && (
                 <p className='text-justify pb-2 text-lg'>
-                     Our product is suitable for most skin types, including normal, 
-                     oily, dry, and combination skin. However, if you have sensitive
-                     skin or a skin condition, we recommend performing a patch test 
-                     before using the product all over your face. Apply a small amount 
-                     of the product to the inside of your elbow and wait 24 hours to make 
-                     sure you do not have an allergic reaction or irritation. If you 
-                     experience any discomfort, discontinue use of the product immediately.
+                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque 
+                     penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                     Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+                     Nulla consequat massa quis enim. Donec pede justo, fringilla vel, 
+                     aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut
                 </p>
             )}
-            <div className='flex justify-between items-center text-lg font-bold mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
+            <div className='flex justify-between items-center md:text-lg gap-2 font-bold mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
                 onClick={()=> setQustionSeven(!questionSeven)}>
                 <button className={questionSeven ? 'text-lily py-2': 'text-raven'}>
                     How should I store this product?
                 </button>
-                <span className='text-2xl transition'>
+                <span className='sm:text-2xl text-lg transition'>
                     {questionSeven ? <Minus /> : '+'}
                 </span>
             </div>
             {questionSeven && (
                 <p className='text-justify pb-2 text-lg'>
-                     Our product is suitable for most skin types, including normal, 
-                     oily, dry, and combination skin. However, if you have sensitive
-                     skin or a skin condition, we recommend performing a patch test 
-                     before using the product all over your face. Apply a small amount 
-                     of the product to the inside of your elbow and wait 24 hours to make 
-                     sure you do not have an allergic reaction or irritation. If you 
-                     experience any discomfort, discontinue use of the product immediately.
+                    Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. 
+                    Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. 
+                    Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, 
+                    sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus 
+                    pulvinar, hendrerit id, lorem.
                 </p>
             )}
-            <div className='flex justify-between items-center text-lg font-bold mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
+            <div className='flex justify-between items-center md:text-lg gap-2 font-bold mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
                 onClick={()=> setQustionEight(!questionEight)}>
                 <button className={questionEight ? 'text-lily py-2': 'text-raven'}>
                     How long will it take to see results from using this product?
                 </button>
-                <span className='text-2xl transition'>
+                <span className='sm:text-2xl text-lg transition'>
                     {questionEight ? <Minus /> : '+'}
                 </span>
             </div>
@@ -172,28 +155,24 @@ const Questions = () => {
                      skin or a skin condition, we recommend performing a patch test 
                      before using the product all over your face. Apply a small amount 
                      of the product to the inside of your elbow and wait 24 hours to make 
-                     sure you do not have an allergic reaction or irritation. If you 
-                     experience any discomfort, discontinue use of the product immediately.
+                     sure you do not have an allergic reaction or irritation.
                 </p>
             )}
-            <div className='flex justify-between items-center text-lg font-bold mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
+            <div className='flex justify-between items-center md:text-lg gap-2 font-bold mb-2 mt-1 pb-1 pt-3 border-t border-ash' 
                 onClick={()=> setQustionNine(!questionNine)}>
                 <button className={questionNine ? 'text-lily py-2': 'text-raven'}>
-                Can this product be used in conjunction with other skincare products?
+                    Can this product be used in conjunction with other skincare products?
                 </button>
-                <span className='text-2xl transition'>
+                <span className='sm:text-2xl text-lg transition'>
                     {questionNine ? <Minus /> : '+'}
                 </span>
             </div>
             {questionNine && (
                 <p className='text-justify pb-2 text-lg'>
-                     Our product is suitable for most skin types, including normal, 
-                     oily, dry, and combination skin. However, if you have sensitive
-                     skin or a skin condition, we recommend performing a patch test 
-                     before using the product all over your face. Apply a small amount 
-                     of the product to the inside of your elbow and wait 24 hours to make 
-                     sure you do not have an allergic reaction or irritation. If you 
-                     experience any discomfort, discontinue use of the product immediately.
+                    Donec vitae sapien ut libero venenatis faucibus. 
+                    Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+                    Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis 
+                    magna. 
                 </p>
             )}
             <div className='border-b border-ash'></div>
