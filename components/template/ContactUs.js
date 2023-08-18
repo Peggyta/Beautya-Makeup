@@ -1,11 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 import WriteUs from '../module/contact/WriteUs';
+import ContactCards from '../module/contact/ContactCards';
+import MobileContactUs from '../module/contact/MobileContactUs';
 
 const ContactUs = () => {
     return (
-        <div className='max-w-8xl mx-auto px-12 text-raven'>
-            <div className='flex gap-2 font-semibold text-sm md:px-0 px-4 pt-6 mt-6 md:mt-0 md:pb-6'>
+        <div className='max-w-8xl mx-auto px-12 text-raven pb-6'>
+            <div className='flex gap-2 font-semibold text-sm pb-3 pt-6 mt-6 md:mt-0 md:pb-6'>
                 <Link className='text-cement' href='/'>Home / </Link>
                 <Link className='text-raven' href='/contact-us'>Contact Us </Link>
             </div>
@@ -16,7 +18,11 @@ const ContactUs = () => {
                 and Saturday-Sunday, 9am to 6pm Or<br/> Fill in The Form Below to Send Us An Email.</p>
             <p className='text-sm text-cement'>Please fill in this form to send us your inquiry. We'll be more 
                 than happy to help and will reply to you as soon as possible.</p>
-            <WriteUs />
+            <div className='hidden md:block'>
+                <WriteUs />
+                <ContactCards />
+            </div>
+            <MobileContactUs />
         </div>
     );
 };

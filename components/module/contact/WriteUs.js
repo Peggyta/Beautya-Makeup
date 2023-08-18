@@ -42,7 +42,7 @@ const WriteUs = () => {
             <h3 className='font-bold text-xl'>Your Request</h3>
             <div className='mt-3'>
                 <p className='text-xl text-cement'>Subject</p>
-                <div className='text-sm flex items-start lg:items-center lg:flex-row flex-col gap-3 mt-2 '>
+                <div className='text-sm grid grid-cols-2 lg:grid-cols-5 gap-3 mt-2 '>
                     <button 
                     onClick={()=>setBranches(!branches)} 
                     className={branches ? 'clicked-req-btn': 'req-btn-styles'}>
@@ -77,7 +77,7 @@ const WriteUs = () => {
                         <label className='text-sm'>I have read and understood the contact us privacy and policy.</label>
                     </div>
                     <div className='flex justify-end'>
-                        <button className='text-lily opacity-50 border border-lily px-8 py-1'>
+                        <button className='text-lily opacity-50 border border-lily px-12 py-3'>
                             Send
                         </button>
                     </div>

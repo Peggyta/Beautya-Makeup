@@ -15,7 +15,7 @@ const ContactCards = () => {
                 <p className='font-bold'>Looking For Personalized Advice?</p>
                 <p className='text-xs text-cement mt-2 mb-4'>The option to chat becomes active when one of our 
                     Client Advisors is available.</p>
-                <button className='text-lily py-1 border border-lily w-full py-2'>Ask Your Question</button>
+                <button className='text-lily py-1 border border-lily w-full py-3'>Ask Your Question</button>
             </div>
             <div className='border border-ash px-3 w-96 bg-white flex flex-col justify-between pb-4'>
                 <div className='flex items-center gap-2'>
@@ -35,7 +35,7 @@ const ContactCards = () => {
                 <p className='font-bold'>Would you like to contact us on an instant messaging app?</p>
                 <p className='text-xs text-cement mt-2 mb-4'>Our Client Advisors will
                  be delighted to assist you</p>
-                <button className='text-lily py-1 border border-lily w-full py-2'>Ask Your Question</button>
+                <button className='text-lily py-1 border border-lily w-full py-3'>Ask Your Question</button>
             </div>
         </div>
     );
