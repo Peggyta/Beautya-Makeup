@@ -9,6 +9,8 @@ import Minus from '@/components/icons/Minus';
 import Plus from '@/components/icons/Plus';
 
 const MobileContactUs = () => {
+    const MAX_TEXT_LENGTH = 360;
+    const[text, setText] = useState("");
     const[isWrite, setIsWrite] = useState(false);
     const[isChat, setIsChat] = useState(false);
     const[isMsg, setIsMsg] = useState(false);
@@ -18,6 +20,13 @@ const MobileContactUs = () => {
     const[refund, setRefund] = useState(false);
     const[skinType, setSkinType] = useState(false);
     const[offer, setOffer] = useState(false);
+
+    function textLimiter (event) {
+        const value = event.target.value;
+        if(value.length <= MAX_TEXT_LENGTH) {
+            setText(value);
+        }
+    }
 
     return (
         <div className='md:hidden flex flex-col mt-10 bg-white text-raven border-t
@@ -78,7 +87,15 @@ const MobileContactUs = () => {
                     </button>
                 </div>
                 <div className='border-b border-ash h-28 mt-4 '>
-                        <input className=' w-full h-full pl-4 text-xl' placeholder='Your Text' /> 
+                        <textarea
+                        onChange={textLimiter}
+                        value={text}
+                        className=' w-full h-full pl-4 text-xl' 
+                        placeholder='Your Text'>
+                        </textarea> 
+                    </div>
+                    <div className='flex justify-end text-sm text-cement pt-0.5'>
+                        {`${text.length} / ${MAX_TEXT_LENGTH}`}
                     </div>
                     <div className='flex items-center gap-2 mt-3 mb-6 '>
                         <input className='accent-lily' type='checkbox' />
