@@ -12,7 +12,7 @@ const Blog = ({data}) => {
                 <Link className='text-cement' href='/'>Home / </Link>
                 <Link className='text-raven' href='/blog'>Blog</Link>
             </div>
-            <h2 className=' font-bold text-3xl my-3'>Blog</h2>
+            <h2 className=' font-bold text-3xl pt-4 my-3'>Blog</h2>
             <div className='max-w-6xl mx-auto grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 
                 md:gap-6 gap-10 mt-12 mb-16'> 
                 {data.map((item)=>{

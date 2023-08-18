@@ -25,6 +25,7 @@ module.exports = {
         '464': '464px',
         '520': '520px',
         '573': '573px',
+        '604': '604px',
       },
       height: {
         '294': '294px',
@@ -33,6 +34,7 @@ module.exports = {
         '630': '460px',
         '439': '439px',
         '474': '474px',
+        '550': '550px',
       },
       spacing: {
         '2.5': '9px',
@@ -62,7 +64,12 @@ module.exports = {
         'cloud': '#dfdfdf',
         'berry': '#a10550',
         'dust': '#faf9f5',
+        'sky': '#f2f2f4',
+        'lightblue': '#9ca3af',
       },
+      fontSize: {
+        '2.5xl': '29px',
+      }
     },
   },
   plugins: [],

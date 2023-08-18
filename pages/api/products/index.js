@@ -12,17 +12,18 @@ export default async function handler(req, res) {
     }
     if(req.method === 'GET') {
         try {
-            const storeData = await Product.create({
+            // const storeData = await Product.create({
               
-            })
+            // })
+            const findProducts = await Product.find();
             res
             .status(200)
-            .json({status: 'success', message: 'data stored in db', data: storeData});
+            .json({status: 'success', message: 'data stored in db', data: findProducts});
     
          } catch(err) {
             res
             .status(500)
-            .json({status: 'failed', message: 'error in stroing data to database'});
+            .json({status: 'failed', message: 'error in retrieving data from database'});
          }
     }  
 }

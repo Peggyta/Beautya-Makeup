@@ -27,7 +27,7 @@ const BranchSearchBar = ({info}) => {
                 <Link className='text-cement' href='/'>Home / </Link>
                 <Link className='text-raven' href='/branches'>Branches</Link>
             </div>
-            <h2 className='text-raven font-bold text-3xl my-3'>Beautya Branches</h2>
+            <h2 className='text-raven pt-4 font-bold text-3xl my-3'>Beautya Branches</h2>
             <div className='w-full flex md:flex-row flex-col items-center justify-between'>
                 <div className='w-full md:w-3/4 flex md:flex-row flex-col items-center lg:gap-4 gap-3'>
                 <div className='text-cement text-sm flex flex-col justify-center lg:w-464 md:w-80 pt-5 w-full '>

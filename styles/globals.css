@@ -33,4 +33,16 @@ a:hover {
     checked:after:border-l-0 checked:after:border-t-0 checked:focus:after:bg-transparent
     before:scale-0 before:rounded-full appearance-none checked:focus:after:border-t-0
   }
+  .input-styles {
+    @apply py-2 pl-3 border-b border-ash
+  }
+  .input-mobile-styles {
+    @apply py-6 pl-3 border-b border-ash
+  }
+  .req-btn-styles {
+    @apply border hover:bg-rose hover:text-lily hover:border-lily transition border-ash px-2 py-2
+  }
+  .clicked-req-btn {
+    @apply bg-rose text-lily border-lily px-2 py-2
+  }
 }
