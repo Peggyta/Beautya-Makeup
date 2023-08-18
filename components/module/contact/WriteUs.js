@@ -3,11 +3,20 @@ import React, {useState} from 'react';
 import Pocket from '@/components/icons/Pocket';
 
 const WriteUs = () => {
+    const MAX_TEXT_LENGTH = 360;
+    const[text, setText] = useState("");
     const[branches, setBranches] = useState(false);
     const[stock, setStock] = useState(false);
     const[refund, setRefund] = useState(false);
     const[skinType, setSkinType] = useState(false);
     const[offer, setOffer] = useState(false);
+
+    function textLimiter(event) {
+        const value = event.target.value;
+        if(value.length <= MAX_TEXT_LENGTH) {
+            setText(value);
+        }
+    }
 
     return (
         <div className='flex flex-col bg-white border px-4 border-ash py-5 text-raven mt-10'>
@@ -70,11 +79,19 @@ const WriteUs = () => {
                     </button>
                 </div>
                 <div className='border-b border-ash h-28 mt-4 '>
-                        <input className=' w-full h-full pl-4 text-xl' placeholder='Your Text' /> 
+                    <textarea
+                        value={text}
+                        onChange={textLimiter}
+                        className=' w-full h-full pl-4 text-xl' placeholder='Your Text'
+                    >     
+                    </textarea>         
+                    </div>
+                    <div className='flex justify-end text-sm text-cement pt-0.5'>
+                        {`${text.length} / ${MAX_TEXT_LENGTH}`}
                     </div>
                     <div className='flex items-center gap-2 mt-3 mb-6 '>
                         <input className='accent-lily' type='checkbox' />
-                        <label className='text-sm'>I have read and understood the contact us privacy and policy.</label>
+                        <label className='text-sm pt-0.5'>I have read and understood the contact us privacy and policy.</label>
                     </div>
                     <div className='flex justify-end'>
                         <button className='text-lily opacity-50 border border-lily px-12 py-3'>
