@@ -58,7 +58,7 @@ const BranchSearchBar = ({info}) => {
                 <div className={countries ? 'overflow-y-scroll h-439': null}>
                     {info?.map((item)=>{
                         return(
-                                <BranchSearchCard {...item} key={item._id} /> 
+                            <BranchSearchCard {...item} key={item._id} /> 
                         )
                     })}
                 </div>

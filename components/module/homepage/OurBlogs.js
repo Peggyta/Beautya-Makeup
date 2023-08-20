@@ -10,7 +10,7 @@ const OurBlogs = () => {
         .then(data => setData(data.data))
     },[])
     return (
-        <div className='md:px-10 px-4 pt-2 mt-4'>
+        <div className='md:px-10 px-4 pt-2 mt-2'>
         <h3 className='text-center font-bold text-raven text-2xl mt-10 '>
             Our Blog
         </h3>

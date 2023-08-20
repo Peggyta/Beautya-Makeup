@@ -12,7 +12,8 @@ const BlogCard = (props) => {
                 <img className='h-294 md:w-392 w-full object-cover' src={`/images/${slug}.jpg`} alt='blog pic' />
                 <h3 className='font-bold text-xl mt-4 pl-4'>{title}</h3>
             </div>
-            <div className='flex sm:text-sm font-semibold text-xs px-4 gap-1 text-cement pt-1 pb-2'>
+            <div className='flex sm:text-sm font-semibold text-xs px-4 gap-1 
+            text-cement pt-1 pb-2'>
                 <p>{category}</p>
                 <span>|</span>
                 <p>{author}</p>
