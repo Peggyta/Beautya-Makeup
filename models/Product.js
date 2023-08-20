@@ -13,6 +13,7 @@ const productSchema = new Schema ({
     features: [String],
     feature: String,
     image: String,
+    category: String,
 });
 
 const Product = models.Product || model('Product', productSchema);
