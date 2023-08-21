@@ -38,9 +38,9 @@ const GlobalBranches = () => {
                 in multiple countries. Our mission is to provide high-quality cosmetic 
                 products that cater to a diverse range of skin types and tones, while 
                 also delivering exceptional customer service. Our team members are trained 
-                to listen to customers' concerns and preferences, and they use their expertise 
+                to listen to customers concerns and preferences, and they use their expertise 
                 to recommend products that are tailored to their individual needs. In this 
-                section, we will provide an overview of our company's branches and the unique 
+                section, we will provide an overview of our company`s branches and the unique 
                 services they offer, as well as share some of the positive feedback we have 
                 received from our satisfied customers.
                 </p>

@@ -18,9 +18,9 @@ const Offer = () => {
                         Save up to 50%
                     </p>
                     <p className='font-semibold md:font-normal'>
-                        Mother's Day is coming! 
+                        Mother`s Day is coming! 
                     </p>
-                    <p>For everything she's given you, it's time to give back. 
+                    <p>For everything she`s given you, it`s time to give back. 
                     Shower her with love, happiness, and the best of Beautya.</p>
                     <p className='text-lily font-semibold py-2'>visit your local beautya branches to find out more 
                     about our special offers in make up and skincare products.</p>

@@ -9,7 +9,7 @@ const Categories = () => {
     
     return (
         <div className='mt-10 text-raven'>
-        <h2 className='text-center mb-6 font-bold text-2xl'>Product's Categories</h2>
+        <h2 className='text-center mb-6 font-bold text-2xl'>Product`s Categories</h2>
         <div className='w-9/12 mx-auto grid lg:grid-cols-3 gap-2 md:grid-cols-2 grid-cols-1 text-lg'>
             <Link href='/mascara'>
                 <div className='flex flex-col items-center'>

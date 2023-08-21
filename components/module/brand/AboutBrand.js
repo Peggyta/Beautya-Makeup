@@ -30,8 +30,8 @@ const AboutBrand = () => {
                 <div className='pb-4'>
                     <h2 className='text-2xl font-bold mb-3'>Ethical and Sustainable Beauty:</h2>
                     <p>At Beautya cosmetic company , we believe that beauty should never 
-                        come at the expense of animals, the environment, or our customers' 
-                        health. That's why we've made sure that our products are vegan, 
+                        come at the expense of animals, the environment, or our customers` 
+                        health. That`s why we`ve made sure that our products are vegan, 
                         curl-free, gluten-free, and packaged in recycled materials
                     </p>
                 </div>
@@ -39,23 +39,23 @@ const AboutBrand = () => {
                     <h3 className='text-xl font-bold'>Vegan, Curl-Free</h3>
                     <p>When we say our products are vegan, we mean that we never use any 
                         animal-derived ingredients or byproducts in our formulations. 
-                        We believe that cruelty-free beauty is the way of the future, and we're 
+                        We believe that cruelty-free beauty is the way of the future, and we`re 
                         proud to be a part of that movement.
                     </p>
                 </div>
                 <div className='pb-4'>
                     <h3 className='text-xl font-bold'>Gluten-Free Products</h3>
-                    <p>For those with sensitivities or allergies to gluten, we've made sure 
+                    <p>For those with sensitivities or allergies to gluten, we`ve made sure 
                         that our products are 100% gluten-free. You can use our products with 
                         confidence, knowing that they are safe and gentle on your skin.
                     </p>
                 </div>
                 <div className='pb-4'>
                     <h3 className='text-xl font-bold'>Recycled Packaging</h3>
-                    <p>Finally, we're committed to doing our part for the environment, which 
-                        is why we've packaged our products in recycled materials. By choosing our 
-                        products, you're making a positive impact on the planet and reducing your 
-                        environmental footprint. We're dedicated to providing you with high-quality, 
+                    <p>Finally, we`re committed to doing our part for the environment, which 
+                        is why we`ve packaged our products in recycled materials. By choosing our 
+                        products, you`re making a positive impact on the planet and reducing your 
+                        environmental footprint. We`re dedicated to providing you with high-quality, 
                         ethically-sourced beauty solutions that you can feel good about using.
                     </p>
                 </div>

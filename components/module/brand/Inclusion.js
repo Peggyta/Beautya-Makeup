@@ -22,7 +22,7 @@ const Inclusion = () => {
                     <p className='text-raven text-lg text-justify mt-6'>We believe that beauty is a form of self-expression 
                         and should be inclusive 
                         of all cultures and traditions, which is why we offer products that are 
-                        inspired by diverse beauty rituals from around the world."
+                        inspired by diverse beauty rituals from around the world.
                     </p>
                 </div>
             </div>

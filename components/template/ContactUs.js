@@ -16,7 +16,7 @@ const ContactUs = () => {
                 Questions You May Have Regarding Our Products And Corporate Information.</p>
             <p className='text-lg py-2'>Contact Us by Phone: 1-802-526-2463 Monday to Friday, 9am to 9pm, 
                 and Saturday-Sunday, 9am to 6pm Or<br/> Fill in The Form Below to Send Us An Email.</p>
-            <p className='text-sm text-cement'>Please fill in this form to send us your inquiry. We'll be more 
+            <p className='text-sm text-cement'>Please fill in this form to send us your inquiry. We`ll be more 
                 than happy to help and will reply to you as soon as possible.</p>
             <div className='hidden md:block'>
                 <WriteUs />
