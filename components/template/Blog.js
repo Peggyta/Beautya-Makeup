@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Skeleton from 'react-loading-skeleton';
 import BlogCard from '../module/blog/BlogCard';
 import "react-loading-skeleton/dist/skeleton.css";
 
@@ -14,7 +13,7 @@ const Blog = ({data}) => {
             </div>
             <h2 className=' font-bold text-3xl pt-4 my-3'>Blog</h2>
             <div className='max-w-6xl mx-auto grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 
-                md:gap-6 gap-10 mt-12 mb-16'> 
+                md:gap-6 gap-10 mt-12 pb-16'> 
                 {data.map((item)=>{
                     return(
                         <BlogCard key={item._id} {...item} />

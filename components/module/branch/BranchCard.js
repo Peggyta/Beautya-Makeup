@@ -10,7 +10,7 @@ import Time from '../../icons/Time';
 const BranchCard = (props) => {
     const{title,distance,status,work,street,phone} = props;
     return (
-        <div className='sm:w-80 w-full mx-auto py-6 px-3  text-raven flex flex-col gap-5 border border-ash'>
+        <div className='sm:w-80 w-full mx-auto py-6 px-3 bg-white text-raven flex flex-col gap-5 border border-ash'>
             <div className='flex sm:flex-row  sm:gap-2 gap-1 items-center' >
                 <LocationSign />
                 <h3 className='sm:text-lg font-bold'>{title}</h3>

@@ -49,7 +49,7 @@ const FooterSecTwo = () => {
                     <Link href='/'>Women Skincare</Link>
                     <Link href='/'>Gifts & Sets</Link>
                 </div>
-                <div className='flex flex-col gap-6 max-w-max mt-3 lg:mt-0'>
+                <div className='flex flex-col relative z-10 gap-6 max-w-max mt-3 lg:mt-0'>
                     <div>
                         <h3 className='font-bold text-2xl mb-3 lg:mb-6'>
                         keep in touch with beautya
@@ -91,7 +91,7 @@ const FooterSecTwo = () => {
                                 Notice for CA residents.
                             </label>
                             <label className='block md:hidden' htmlFor="checkboxDefault">
-                                I agree to Beautya’s Terms and Conditions and Privacy and Policy.
+                                I agree to Beautya`s Terms and Conditions and Privacy and Policy.
                             </label>
                         </div>
                     </div>
