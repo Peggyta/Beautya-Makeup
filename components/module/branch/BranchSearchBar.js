@@ -25,7 +25,7 @@ const BranchSearchBar = ({info}) => {
         <div className='max-w-8xl mx-auto'>
             <div className='flex gap-2 font-semibold text-sm pt-6'>
                 <Link className='text-cement' href='/'>Home / </Link>
-                <Link className='text-raven' href='/branches'>Branches</Link>
+                <p className='text-raven'>Branches</p>
             </div>
             <h2 className='text-raven pt-4 font-bold text-3xl my-3'>Beautya Branches</h2>
             <div className='w-full flex md:flex-row flex-col items-center justify-between'>
@@ -54,10 +54,11 @@ const BranchSearchBar = ({info}) => {
                     <Link href='/branches/all-branches'>View All Branches</Link>
                 </div>
             </div>
-            <div className='flex justify-between mt-10 flex-col gap-6 mb-10 lg:flex-row items-center'>
-                <div className={countries ? 'overflow-y-scroll h-439': null}>
+            <div className='flex justify-between mt-10 flex-col gap-6 pb-10 lg:flex-row items-center'>
+                <div className='overflow-y-auto h-439'>
                     {info?.map((item)=>{
                         return(
+                            
                             <BranchSearchCard {...item} key={item._id} /> 
                         )
                     })}
