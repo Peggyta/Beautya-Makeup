@@ -10,14 +10,19 @@ const BranchesOfCountry = ({info}) => {
 
     return (
     <div className='max-w-8xl px-12 mx-auto pt-6 md:mt-0 mt-6'>
-        <div className='flex gap-2 font-semibold text-sm '>
-            <Link className='text-cement' href='/'>Home / </Link>
-            <Link className='text-cement' href='/branches'>Branches / </Link>
-            <Link className='text-cement' href='/branches/all-branches'>All Branches /</Link>
-            <p className='text-raven'>{country}</p>
+        <div className='flex sm:flex-row flex-col  gap-2 font-semibold text-sm '>
+            <div>
+                <Link className='text-cement' href='/'>Home / </Link>
+                <Link className='text-cement' href='/branches'>Branches / </Link>
+            </div>
+            <div className='flex'>
+                <Link className='text-cement' href='/branches/all-branches'>All Branches /</Link>
+                <p className='text-raven pl-1'> {country}</p>
+            </div>
+            
         </div>
         <div className='max-w-6xl grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 
-            md:gap-6 gap-10 mt-16 mb-10  '>
+            md:gap-6 gap-10 sm:mt-16 mt-6 mb-10  '>
             {filteredCountries.map((branches)=>{
                 return(
                 <BranchCard key={branches._id} {...branches} />)
