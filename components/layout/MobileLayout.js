@@ -35,7 +35,7 @@ const MobileLayout = () => {
         </div>
         <div onClick={() => setShowMenu(!showMenu)} 
         className={showMenu ?
-         'top-0 transition ease-in transition-all p-8 font-bold absolute bg-gray-200 w-full' : 
+         'top-0 z-30 transition ease-in transition-all p-8 font-bold absolute bg-gray-200 w-full' : 
          'translate-y-0 absolute -top-48'}>
             <div className='absolute right-10'>
                 {showMenu ? <Cancel /> : <Hamburger/>}  

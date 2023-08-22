@@ -31,7 +31,7 @@ const GlobalBranches = () => {
                     over 30 Countries.</p>
                 </div>
            </div>
-            <div className='max-w-1016 mx-auto text-justify mb-16 px-6 lg:px-0'>
+            <div className='max-w-1016 mx-auto text-justify pb-16 px-6 lg:px-0'>
                 <h3 className='font-bold text-2xl mt-6 mb-3'>Global branches & satisfied customers</h3>
                 <p className='text-lg'>
                 At Beautya, we are proud to have a global presence with branches 

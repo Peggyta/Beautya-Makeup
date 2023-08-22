@@ -37,7 +37,7 @@ const SortProducts = ({data}) => {
                     name='price'
                     onChange={(e)=>setQuery({...query,[e.target.name]: e.target.value})}
                     value={query.price}
-                    className='lg:border-inherit py-2 text-sm font-bold border border-ash 
+                    className='lg:border-inherit py-3 text-sm font-bold border border-ash 
                     bg-white px-1 cursor-pointer '>
                     <option value='recommend'>Sort: Recommended</option>
                     <option value='higher'>Higher Price</option>
