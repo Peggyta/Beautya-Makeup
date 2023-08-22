@@ -14,7 +14,7 @@ const BranchesOfCountry = ({info}) => {
             <Link className='text-cement' href='/'>Home / </Link>
             <Link className='text-cement' href='/branches'>Branches / </Link>
             <Link className='text-cement' href='/branches/all-branches'>All Branches /</Link>
-            <Link className='text-raven' href={`${country}`}>{country}</Link>
+            <p className='text-raven'>{country}</p>
         </div>
         <div className='max-w-6xl grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 
             md:gap-6 gap-10 mt-16 mb-10  '>

@@ -11,6 +11,7 @@ import Search from '../../components/icons/Search';
 import Language from '../../components/icons/Language';
 import styles from '../../styles/general.module.css';
 
+
 const Layout = ({children}) => {
     return (
         <div className='max-w-8xl mx-auto'>

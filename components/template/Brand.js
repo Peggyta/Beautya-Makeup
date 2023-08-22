@@ -10,7 +10,7 @@ const Brand = () => {
         <div className='max-w-8xl mx-auto'>
             <div className='flex gap-2 font-semibold text-sm md:px-12 px-4 pt-6 mt-6 md:mt-0 md:pb-6'>
                 <Link className='text-cement' href='/'>Home / </Link>
-                <Link className='text-raven' href='/our-brand'>Our Brand </Link>
+                <p className='text-raven'>Our Brand </p>
             </div>
             <BrandBanner />
             <AboutBrand />

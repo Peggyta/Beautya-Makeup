@@ -3,10 +3,6 @@ import ListOfCountries from '../module/branch/ListOfCountries';
 import Link from 'next/link';
 
 const AllBranches = () => {
-    //to filter duplicate name of countries
-    // function filterDuplicate(data) {
-    //     return data.filter((item,index)=> data.findIndex(i=> i.country === item.country) === index)
-    // };
     return (
         <div className='max-w-8xl mx-auto px-12 text-raven md:px-10 px-4 bg-dust'>
             <div className='flex gap-2 font-semibold text-sm pt-6'>

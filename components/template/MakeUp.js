@@ -9,7 +9,7 @@ const MakeUp = ({data}) => {
         <div className='max-w-8xl mx-auto px-12 mt-6 md:mt-0'>
             <div className='flex gap-2 font-semibold text-sm pt-6'>
                 <Link className='text-cement' href='/'>Home / </Link>
-                <Link className='text-raven' href='/women-makeup'>Women MakeUp</Link>
+                <p className='text-raven'>Women MakeUp</p>
             </div>
             <h2 className='text-raven font-bold sm:text-3xl text-xl pt-6'>Women Makeup</h2>
             <SortProducts />

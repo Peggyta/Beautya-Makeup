@@ -9,7 +9,7 @@ const ContactUs = () => {
         <div className='max-w-8xl mx-auto px-12 text-raven pb-6'>
             <div className='flex gap-2 font-semibold text-sm pb-3 pt-6 mt-6 md:mt-0 md:pb-6'>
                 <Link className='text-cement' href='/'>Home / </Link>
-                <Link className='text-raven' href='/contact-us'>Contact Us </Link>
+                <p className='text-raven'>Contact Us </p>
             </div>
             <h2 className='font-bold text-3xl pb-4'>Contact Us</h2>
             <p className='text-lg'>Beautya Client Service Center Is Happy to Help You With Any 
