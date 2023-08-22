@@ -22,7 +22,7 @@ const CategoryCard = (props) => {
                 <p>{category}</p>
             </div>
             <div className='w-full mx-auto grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 
-                md:gap-6 gap-10 pt-10 mb-16'>
+                md:gap-6 gap-10 pt-10 pb-16'>
             {!data.length ? (categoryData.map((item)=> {
              return <Loading key={item._id} />
             })) : (categoryData.map((item)=> {
