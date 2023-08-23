@@ -28,7 +28,7 @@ const SortProducts = ({data}) => {
         <div className='flex flex-col sm:flex-row justify-between lg:pr-4 flex-row text-raven md:mt-0 mt-6 pt-4 gap-3 items-center'>
             <h3 className='font-bold text-xl lg:block hidden'>Filter</h3>
             <div className='lg:hidden block bg-white border border-ash sm:w-32 w-40
-                flex items-center justify-center px-2 gap-1 py-2'>
+                flex items-center justify-center px-2 gap-1 pt-2.5 pb-2.8'>
                 <FilterIcon />
                 <button onClick={()=> setIsOpen(!open)} className='font-bold w-full text-sm'>Filter</button>
             </div>
