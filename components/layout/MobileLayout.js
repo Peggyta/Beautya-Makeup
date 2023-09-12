@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 //icons
-import Search from '../icons/Search';
+import SearchIcon from '../icons/SearchIcon';
 import Logo from '../icons/Logo';
 import Hamburger from '../icons/Hamburger';
 import Language from '../icons/Language';
@@ -18,7 +18,7 @@ const MobileLayout = () => {
                 <button onClick={()=> setShowMenu(!showMenu)}>
                     <Hamburger/>     
                 </button>
-                <Search />
+                <SearchIcon />
             </div>
             <div className='relative'>
                 <div className={styles.logoShadow}></div>

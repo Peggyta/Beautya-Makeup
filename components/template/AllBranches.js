@@ -24,7 +24,9 @@ const AllBranches = () => {
                         </button>
                      </div>
                 </div>
+                <div className='pb-16 pt-5 md:pt-2 md:pb-0'>
                     <ListOfCountries />
+                </div>    
             </div>  
     );
 };

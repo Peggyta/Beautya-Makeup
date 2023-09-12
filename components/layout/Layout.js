@@ -1,18 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Link from 'next/link';
 import MobileLayout from './MobileLayout';
 import FooterSecOne from '../module/footer/FooterSecOne';
 import FooterSecTwo from '../module/footer/FooterSecTwo';
 import FooterSecThree from '../module/footer/FooterSecThree';
 import FooterSecFour from '../module/footer/FooterSecFour';
+import SearchBar from '../module/search/SearchBar';
 //icons
 import Logo from '../../components/icons/Logo';
-import Search from '../../components/icons/Search';
 import Language from '../../components/icons/Language';
+import SearchIcon from '../icons/SearchIcon';
 import styles from '../../styles/general.module.css';
 
 
 const Layout = ({children}) => {
+    const[showSearchBar, setShowSearchBar] = useState(false);
+
     return (
         <div className='max-w-8xl mx-auto'>
             <div className='md:hidden block'>
@@ -34,7 +37,9 @@ const Layout = ({children}) => {
                     <Link href='/contact-us'>Contact Us</Link>
                 </div>
                 <div className='hidden md:flex gap-x-2 w-max items-center'>
-                    <Search /> 
+                    <div className='cursor-pointer' onClick={() => setShowSearchBar(!showSearchBar)}>
+                        <SearchIcon /> 
+                    </div>
                     <p className='text-neutral text-2xl'>|</p>
                     <Language /> 
                     <ul>
@@ -42,7 +47,10 @@ const Layout = ({children}) => {
                     </ul>   
                 </div>
             </header>
-            <div className='min-h-screen w-full bg-dust'>{children}</div>
+            <div className='min-h-screen w-full bg-dust'>
+                {showSearchBar ? <SearchBar/> : null}
+                {children}
+            </div>
             <footer className='w-full'>
                 <FooterSecOne />
                 <FooterSecTwo />
