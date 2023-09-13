@@ -14,7 +14,7 @@ const OurBlogs = () => {
         <h3 className='text-center font-bold text-raven text-2xl mt-10 '>
             Our Blog
         </h3>
-        <div className='md:flex justify-end lg:pr-20 pr-6 text-sm text-lily hidden'>
+        <div className='md:flex justify-end xl:pr-24 lg:pr-20 pr-6 text-sm text-lily hidden'>
             <Link href='/blog'>View All</Link>
         </div>
         <div className='max-w-6xl mx-auto grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 
