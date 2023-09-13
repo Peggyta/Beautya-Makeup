@@ -7,7 +7,7 @@ function FilterCountries({getData}) {
     const router = useRouter();
     const[countries] = router.query.country;
     const filteredCountries = getData.filter((item)=> 
-    (item.country).toLowerCase() === countries.toLowerCase());
+    (item.country).toLowerCase().includes(countries.toLowerCase()) === countries.toLowerCase().includes(countries.toLowerCase()));
   
 
     return(

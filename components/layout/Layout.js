@@ -5,7 +5,7 @@ import FooterSecOne from '../module/footer/FooterSecOne';
 import FooterSecTwo from '../module/footer/FooterSecTwo';
 import FooterSecThree from '../module/footer/FooterSecThree';
 import FooterSecFour from '../module/footer/FooterSecFour';
-import SearchBar from '../module/search/SearchBar';
+import SearchBar from '../template/SearchBar';
 //icons
 import Logo from '../../components/icons/Logo';
 import Language from '../../components/icons/Language';
